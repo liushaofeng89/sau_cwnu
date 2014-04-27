@@ -6,12 +6,20 @@ var summary=encodeURI("地址：四川省南充市顺庆区师大路一号西华
 $(document).ready(function(){
 	//获取网页中图片的地址
 	var imgs = document.getElementsByTagName("img");
-	if(imgs.length==0)
+	var size=null;
+	if(imgs.length>4)
 	{
-		return;
+		size=4;
+	}else
+	{
+		size=imgs.length;
 	}
-	var imgURLs=new Array(4);
-	for(var i = 0;i<4;i++){   
+	var imgURLs=new Array(size);
+	for(var i = 0;i<size;i++){
+		if(null==imgs[i].src)
+		{
+			break;
+		}
 		imgURLs[i] = imgs[i].src;
 	}
 	pics=imgURLs.join("|");

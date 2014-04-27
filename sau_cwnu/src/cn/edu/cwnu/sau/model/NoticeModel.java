@@ -11,6 +11,7 @@ public class NoticeModel
 	private String notice_title;
 	private String notice_content;
 	private String notice_time;
+	private int notice_visited;
 	public int getNotice_id()
 	{
 		return notice_id;
@@ -43,6 +44,12 @@ public class NoticeModel
 	{
 		notice_time = noticeTime;
 	}
-	
-	
+	public int getNotice_visited()
+	{
+		return notice_visited;
+	}
+	public void setNotice_visited(int noticeVisited)
+	{
+		notice_visited = noticeVisited;
+	}
 }

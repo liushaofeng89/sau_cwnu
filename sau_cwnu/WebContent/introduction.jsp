@@ -16,7 +16,7 @@
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
 	<![endif]-->
 	
-	<script src="./js/jquery.js"></script>
+	<script src="./manager/js/jquery-1.7.2.min.js"></script>
 	<script src="./js/selectivizr.js"></script>
 	<script src="./js/prettyphoto.js"></script>
 	<script src="./js/onload.js"></script>
@@ -98,10 +98,6 @@ ipsum adipiscing diam tempor scelerisque, quam sem, accumsan odio orci, blandit 
 
 		<hr />
 		
-
-		
-
-		
 		<!-- BEGIN IMAGES -->
 		<h1>Images</h1>
 		
@@ -132,10 +128,6 @@ ipsum adipiscing diam tempor scelerisque, quam sem, accumsan odio orci, blandit 
 
 	</article>
 	<!-- END ARTICLE -->
-	
-	
-
-
 </div>
 <!--  END PAGE -->
 
@@ -143,8 +135,11 @@ ipsum adipiscing diam tempor scelerisque, quam sem, accumsan odio orci, blandit 
 <!--  START FOOTER -->
 <%@ include file="foot.jsp"%>
 <!--  END FOOTER -->
-
-
-
+<script type="text/javascript">
+	$(function($) {
+		//菜单选中
+		$("#slgk").addClass("current-menu-item");
+	});
+</script>
 </body>
 </html>
