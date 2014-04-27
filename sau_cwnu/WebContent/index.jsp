@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" import="cn.edu.cwnu.sau.model.NoticeModel,cn.edu.cwnu.sau.util.DataBaseUtil,java.util.List" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -77,15 +76,16 @@
 			<div class="column column_50">
 				<div class="title">通知公告</div>
 				<ul class="plus">
-					<li><a>第二十六届校园文化艺术节开幕</a></li>
-					<li><a>新学期学生干部大会召开</a></li>
-					<li><a>我校志愿服务工作获表彰</a> </li>
-					<li><a>我校学子康森荣获“2013年度中国大学生自强之星”称号</a></li>
-					<li><a>学校团委授予145名同学“2013年度优秀干事”称号</a></li>
-					<li><a>四川人艺走进西华师大 </a></li>
-					<li><a>校团委召开新学期团总支书记工作会议 安排部署新学期工作 </a></li>
-					<li><a>植绿色梦想 建美丽师大</a> </li>
-					<li><a>新学期学生干部大会召开</a> </li>
+					<%
+						List<Object> list=DataBaseUtil.query(NoticeModel.class,"select * from notice_info order by notice_time desc");
+						for(Object obj:list)
+						{
+							NoticeModel model=(NoticeModel)obj;
+					%>
+					<li><a href="#"><%=model.getNotice_title() %></a></li>
+					<%
+						}
+					%>
 				</ul>
 			</div>
 

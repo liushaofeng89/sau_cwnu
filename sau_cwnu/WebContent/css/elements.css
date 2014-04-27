@@ -176,13 +176,20 @@ color: #77797e;
 ----------------- */
 
 ul.plus li {
-	background: url(../img/li_plus.png) no-repeat 0 4px;
-	color:#77797e;
+	background: url(../img/li_plus.png) no-repeat 0 6px;
 	text-align: left;
 	margin-top:2px;
 	padding-left: 15px;
 	font-family: "Play", sans-serif;
 	font-size: 0.95em;
+}
+
+ul.plus li a{
+	color:#77797e;
+}
+
+ul.plus li a:hover {
+	color: black;
 }
 
 ul.minus li {
@@ -198,6 +205,7 @@ ul.dot li {
 	font-family: "Play", sans-serif;
 	font-size: 0.95em;
 }
+
 
 ul.dot li:hover {
 	color: black;
