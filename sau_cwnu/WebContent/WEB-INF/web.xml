@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>sau_cwnu</display-name>
+	<servlet>
+		<description>
+		</description>
+		<display-name>DownloadServlet</display-name>
+		<servlet-name>DownloadServlet</servlet-name>
+		<servlet-class>cn.edu.cwnu.sau.servlet.DownloadServlet</servlet-class>
+        <init-param>
+            <param-name>contentType</param-name>
+            <param-value>application/octet-stream</param-value>
+        </init-param>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>SysErrorServlet</display-name>
+		<servlet-name>SysErrorServlet</servlet-name>
+		<servlet-class>cn.edu.cwnu.sau.servlet.SysErrorServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>InitServlet</display-name>
+		<servlet-name>InitServlet</servlet-name>
+		<servlet-class>
+		cn.edu.cwnu.sau.servlet.InitServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DownloadServlet</servlet-name>
+		<url-pattern>/DownloadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SysErrorServlet</servlet-name>
+		<url-pattern>/SysErrorServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>InitServlet</servlet-name>
+		<url-pattern>/InitServlet</url-pattern>
+	</servlet-mapping>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/SysErrorServlet</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/SysErrorServlet</location>
+	</error-page>
+	<welcome-file-list>
+		<welcome-file>InitServlet</welcome-file>
+	</welcome-file-list>
+</web-app>
