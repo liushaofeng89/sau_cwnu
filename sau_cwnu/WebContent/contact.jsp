@@ -49,12 +49,12 @@
 
 <dl>
 	<dt>E-mail:</dt>
-	<dd><a href="mailto:shetuanfengcai@163.com">shetuanfengcai@163.com</a></dd>
+	<dd><a href="mailto:${sessionScope.site.site_mail}">${sessionScope.site.site_mail}</a></dd>
 </dl>
 
 <dl>
 	<dt>电话:</dt>
-	<dd>18980057435</dd>
+	<dd>${sessionScope.site.site_phone}</dd>
 </dl>
 <dl>
 	<dt>&nbsp;</dt>
@@ -65,8 +65,8 @@
 
 <div class="contact-data">
 <p><strong>地址:</strong></p>
-<p>四川省南充市顺庆区师大路一号</p>
-<p>西华师范大学新区二期十九公寓一楼</p>
+<p>${sessionScope.site.site_school_location}</p>
+<p>${sessionScope.site.site_sau_location}</p>
 </div>
 
 </div>

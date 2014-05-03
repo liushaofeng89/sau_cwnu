@@ -5,11 +5,11 @@
 	<section class="contact">
 		
 		<span class="mobile">
-			<strong>移动电话:</strong> 18980057435
+			<strong>移动电话:</strong> ${sessionScope.site.site_phone}
 		</span>
 
 		<span class="mail">
-			<strong>E-mail:</strong> <a href="mailto:shetuanfengcai@163.com">shetuanfengcai@163.com</a>
+			<strong>E-mail:</strong> <a href="mailto:${sessionScope.site.site_mail}">${sessionScope.site.site_mail}</a>
 		</span>
 		
 		<a class="top">回到顶端</a>
@@ -25,6 +25,7 @@
 			<li><a href="#">社团风采</a></li>
 			<li><a href="#">联系我们</a></li>
 			<li class="current-menu-item"><a href="./contact.jsp">记住我们</a></li>
+			<li><a href="./sys/index.jsp">后台管理</a></li>
 		</ul>
 	</nav>
 	
