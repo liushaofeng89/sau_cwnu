@@ -20,61 +20,43 @@
 	<script type="text/javascript" src="./js/kindeditor-min.js"></script>
 	<script type="text/javascript" src="./js/zh_CN.js"></script>
 	<script type="text/javascript" src="./js/sau.js"></script>
-	<script>
-		$(function(){
-			$('#tt2').datagrid({
-				title:'My Title',
-				iconCls:'icon-save',
-				width:600,
-				height:350,
-				nowrap: false,
-				striped: true,
-				fit: true,
-				url:'datagrid_data.json',
-				sortName: 'code',
-				sortOrder: 'desc',
-				idField:'code',
-				frozenColumns:[[
-	                {field:'ck',checkbox:true},
-	                {title:'code',field:'code',width:80,sortable:true}
-				]],
-				columns:[[
-			        {title:'Base Information',colspan:3},
-					{field:'opt',title:'Operation',width:100,align:'center', rowspan:2,
-						formatter:function(value,rec){
-							return '<span style="color:red">Edit Delete</span>';
-						}
-					}
-				],[
-					{field:'name',title:'Name',width:120},
-					{field:'addr',title:'Address',width:120,rowspan:2,sortable:true},
-					{field:'col4',title:'Col41',width:150,rowspan:2}
-				]],
-				pagination:true,
-				rownumbers:true
+	<script type="text/javascript">
+		//动态添加选项卡
+		function addTab(titleName){
+			//判断该选项卡是否已经存在
+			
+			var tabs=$('#ct').tabs();
+			$('#ct').tabs('add',{
+					title: titleName ,
+					content:'This the content part!',
+					//iconCls:'icon-save',//设置图标
+					closable:true
 			});
-		});
+		}
+
+		//文档加载完毕请求后台展示数据
+		$(function($) {
+			$.ajax({
+				   type: "POST",
+				   url: "/sau_cwnu/InitServlet",
+				   data: "name=John&location=Boston",
+				   success: function(msg){
+				     alert( "Data Saved: " + msg );
+				   }
+				});
+			});
 	</script>
 </head>
 <body class="easyui-layout">
 	<div region="north" title="网站信息" split="true" style="height:70px;padding:3px;">
 		<p style="float: right">网站访问：【${sessionScope.site.site_visited}次】       当前用户：【liushaofeng】  <a href="../index.jsp">退出管理</a></p>
 	</div>
-	<div region="south" title="South Title" split="true" style="height:100px;padding:10px;background:#efefef;">
-		<div class="easyui-layout" fit="true" style="background:#ccc;">
-			<div region="center">sub center</div>
-			<div region="east" split="true" style="width:200px;">sub center</div>
-		</div>
-	</div>
-	<div region="east" iconCls="icon-reload" title="Tree Menu" split="true" style="width:180px;">
-		<ul class="easyui-tree" url="tree_data.json"></ul>
-	</div>
 	<div region="west" split="true" title="维护菜单" style="width:180px;padding1:1px;overflow:hidden;">
 		<div class="easyui-accordion" fit="true" border="false">
 			<div title="通知/活动维护" selected="true" style="padding:10px;overflow:auto;">
-				<p><a href="javascript:addNotice()">发布通知</a></p>
-				<p><a href="javascript:addActivity()">发布活动</a></p>
-				<p><a href="javascript:addNews()">发布新闻</a></p>
+				<p><a href="javascript:addTab('通知公告')">发布通知</a></p>
+				<p><a href="javascript:addTab('活动预告')">发布活动</a></p>
+				<p><a href="javascript:addTab('新闻发布')">发布新闻</a></p>
 			</div>
 			<div title="组织维护" style="padding:10px;">
 				<p><a href="#">社联简介</a></p>
@@ -82,7 +64,7 @@
 				<p><a href="#">联系方式</a></p>
 			</div>
 			<div title="资料上传" style="padding:10px">
-				<p><a href="#">上传资料</a></p>
+				<p><a href="javascript:addTab('upload')">上传资料</a></p>
 			</div>
 		</div>
 	</div>
@@ -101,9 +83,4 @@
 		</div>
 	</div>
 </body>
-	<script type="text/javascript">
-	$(document).ready(function(){
-			loadResource();
-		});
-	</script>
 </html>

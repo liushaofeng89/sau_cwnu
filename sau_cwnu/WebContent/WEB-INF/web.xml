@@ -45,6 +45,8 @@
 		<servlet-class>
 		cn.edu.cwnu.sau.servlet.LoginServlet</servlet-class>
 	</servlet>
+	
+	
 	<servlet-mapping>
 		<servlet-name>DownloadServlet</servlet-name>
 		<url-pattern>/DownloadServlet</url-pattern>
@@ -65,6 +67,18 @@
 		<servlet-name>LoginServlet</servlet-name>
 		<url-pattern>/LoginServlet</url-pattern>
 	</servlet-mapping>
+	
+	
+	 <filter>
+		  <filter-name>RightCheck</filter-name>
+		  <filter-class>cn.edu.cwnu.sau.filter.RightCheck</filter-class>
+	 </filter>
+	 <filter-mapping>
+		  <filter-name>RightCheck</filter-name>
+	 	  <url-pattern>/sys/*</url-pattern>
+	 </filter-mapping>
+	 
+	
 	<error-page>
 		<error-code>404</error-code>
 		<location>/SysErrorServlet</location>
@@ -73,6 +87,8 @@
 		<error-code>500</error-code>
 		<location>/SysErrorServlet</location>
 	</error-page>
+	
+	
 	<welcome-file-list>
 		<welcome-file>InitServlet</welcome-file>
 	</welcome-file-list>

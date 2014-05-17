@@ -39,6 +39,7 @@ public class DownloadServlet extends HttpServlet
 	}
 
 	/**
+	 * the method for download
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
@@ -80,12 +81,14 @@ public class DownloadServlet extends HttpServlet
 	}
 
 	/**
+	 * this method for get resource information
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
 			IOException
 	{
+		System.out.println("query download resource!");
 	}
 
 }

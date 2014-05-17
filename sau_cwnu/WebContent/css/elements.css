@@ -177,11 +177,12 @@ color: #77797e;
 
 ul.plus li {
 	background: url(../img/li_plus.png) no-repeat 0 6px;
+	border-bottom:1px solid #c3c3c3;
 	text-align: left;
-	margin-top:2px;
+	margin-top:5px;
 	padding-left: 15px;
 	font-family: "Play", sans-serif;
-	font-size: 0.95em;
+	font-size: 0.97em;
 }
 
 ul.plus li a{
@@ -189,7 +190,7 @@ ul.plus li a{
 }
 
 ul.plus li a:hover {
-	color: black;
+	color: red;
 }
 
 ul.minus li {
@@ -198,17 +199,18 @@ ul.minus li {
 
 ul.dot li {
 	background: url(../img/li_dot.png) no-repeat 0 6px;
+	border-bottom:1px solid #c3c3c3;
 	color:#77797e;
 	text-align: left;
-	margin-top:2px;
+	margin-top:5px;
 	padding-left: 15px;
 	font-family: "Play", sans-serif;
-	font-size: 0.95em;
+	font-size: 0.97em;
 }
 
 
 ul.dot li:hover {
-	color: black;
+	color: red;
 }
 
 ul.tick li {

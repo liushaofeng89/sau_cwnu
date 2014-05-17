@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import cn.edu.cwnu.sau.model.DownloadModel;
+import cn.edu.cwnu.sau.model.NoticeModel;
 import cn.edu.cwnu.sau.model.SiteInfoModel;
 import cn.edu.cwnu.sau.util.DataBaseUtil;
 
@@ -17,7 +19,8 @@ import cn.edu.cwnu.sau.util.DataBaseUtil;
  */
 public class InitServlet extends HttpServlet
 {
-	private static final long serialVersionUID = 1L;
+
+	private static final long serialVersionUID = 8058297768858225092L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -40,22 +43,34 @@ public class InitServlet extends HttpServlet
 		session.setAttribute("site", model);
 
 		// 更新网站的的访问次数
-		int visited=Integer.parseInt(model.getSite_visited());
-		DataBaseUtil.update("update site_info set site_visited = '" + (visited + 1)
-				+ "' where site_info_id = '1' ");
+		int visited = Integer.parseInt(model.getSite_visited());
+		DataBaseUtil.update("update site_info set site_visited = '" + (visited + 1) + "' where site_info_id = '1' ");
 
 		// 页面跳转
 		response.sendRedirect("index.jsp");
 	}
 
 	/**
+	 * init the background data for first visited
+	 * 
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
 			IOException
 	{
-		// TODO Auto-generated method stub
+		// 加载通知
+		DataBaseUtil.query(NoticeModel.class, "select * from notice_info order by notice_time desc");
+
+		// 加载新闻
+		//DataBaseUtil.query(NoticeModel.class, "select * from notice_info order by notice_time desc");
+
+		// 加载活动预告
+		//DataBaseUtil.query(NoticeModel.class, "select * from notice_info order by notice_time desc");
+
+		// 加载下载资料
+		List<Object> query = DataBaseUtil.query(DownloadModel.class, "select * from resource_download");
+
 	}
 
 }
