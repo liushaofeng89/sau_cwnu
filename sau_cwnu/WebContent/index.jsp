@@ -90,7 +90,7 @@
 			</div>
 
 			<div class="column column_50">
-				<div class="title">活动预告</div>
+				<div class="title">活动预告<span style="float:right">更多</span></div>
 				<ul class="dot">
 					<li><a>第二十六届校园文化艺术节开幕</a></li>
 					<li><a>新学期学生干部大会召开</a></li>
