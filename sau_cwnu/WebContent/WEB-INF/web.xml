@@ -3,91 +3,33 @@
 	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 	<display-name>sau_cwnu</display-name>
-	<servlet>
-		<description>
-		</description>
-		<display-name>DownloadServlet</display-name>
-		<servlet-name>DownloadServlet</servlet-name>
-		<servlet-class>cn.edu.cwnu.sau.servlet.DownloadServlet</servlet-class>
-        <init-param>
-            <param-name>contentType</param-name>
-            <param-value>application/octet-stream</param-value>
-        </init-param>
-	</servlet>
-	<servlet>
-		<description>
-		</description>
-		<display-name>SysErrorServlet</display-name>
-		<servlet-name>SysErrorServlet</servlet-name>
-		<servlet-class>cn.edu.cwnu.sau.servlet.SysErrorServlet</servlet-class>
-	</servlet>
-	<servlet>
-		<description>
-		</description>
-		<display-name>InitServlet</display-name>
-		<servlet-name>InitServlet</servlet-name>
-		<servlet-class>
-		cn.edu.cwnu.sau.servlet.InitServlet</servlet-class>
-	</servlet>
-	<servlet>
-		<description>
-		</description>
-		<display-name>LogoutServlet</display-name>
-		<servlet-name>LogoutServlet</servlet-name>
-		<servlet-class>
-		cn.edu.cwnu.sau.servlet.LogoutServlet</servlet-class>
-	</servlet>
-	<servlet>
-		<description>
-		</description>
-		<display-name>LoginServlet</display-name>
-		<servlet-name>LoginServlet</servlet-name>
-		<servlet-class>
-		cn.edu.cwnu.sau.servlet.LoginServlet</servlet-class>
-	</servlet>
+	
+	<!-- struts Framework -->  
+    <filter>  
+        <filter-name>struts2</filter-name>  
+        <filter-class>  
+          org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter   
+        </filter-class>  
+    </filter>  
+    <filter-mapping>  
+        <filter-name>struts2</filter-name>  
+        <url-pattern>/*</url-pattern>  
+    </filter-mapping> 
+	<!-- struts Framework end-->
 	
 	
-	<servlet-mapping>
-		<servlet-name>DownloadServlet</servlet-name>
-		<url-pattern>/DownloadServlet</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>SysErrorServlet</servlet-name>
-		<url-pattern>/SysErrorServlet</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>InitServlet</servlet-name>
-		<url-pattern>/InitServlet</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>LogoutServlet</servlet-name>
-		<url-pattern>/LogoutServlet</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>LoginServlet</servlet-name>
-		<url-pattern>/LoginServlet</url-pattern>
-	</servlet-mapping>
-	
-	
-	 <filter>
-		  <filter-name>RightCheck</filter-name>
-		  <filter-class>cn.edu.cwnu.sau.filter.RightCheck</filter-class>
-	 </filter>
-	 <filter-mapping>
-		  <filter-name>RightCheck</filter-name>
-	 	  <url-pattern>/sys/*</url-pattern>
-	 </filter-mapping>
-	 
-	
-	<error-page>
-		<error-code>404</error-code>
-		<location>/SysErrorServlet</location>
-	</error-page>
-	<error-page>
-		<error-code>500</error-code>
-		<location>/SysErrorServlet</location>
-	</error-page>
-	
+	<!-- Spring Framework -->
+    <listener>
+        <listener-class>
+          org.springframework.web.context.ContextLoaderListener
+        </listener-class>
+    </listener>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath:/applicationContext*.xml
+        </param-value>
+    </context-param>
 	
 	<welcome-file-list>
 		<welcome-file>InitServlet</welcome-file>
