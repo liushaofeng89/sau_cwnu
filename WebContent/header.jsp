@@ -16,10 +16,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.jsp"><i class="fa fa-fw fa-home"></i>首页</a>
+                        <a href="index.jsp"><i class="fa fa-fw fa-home"></i> 首页</a>
                     </li>
                     <li>
-                        <a href="services.html"><i class="fa fa-fw fa-news"></i>新闻中心</a>
+                        <a href="services.html"><i class="fa fa-fw fa-bullhorn"></i> 新闻中心</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">社联概况 <b class="caret"></b></a>
@@ -33,7 +33,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-flag"></i>模范先进 <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-flag"></i> 模范先进 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="blog-home-1.html">先进集体</a>
@@ -64,7 +64,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="index.html"><i class="fa fa-fw fa-download"></i>资料下载</a>
+                        <a href="download.jsp"><i class="fa fa-fw fa-download"></i> 资料下载</a>
                     </li>
                     <li>
                         <a href="contact.jsp">联系我们</a>

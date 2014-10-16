@@ -64,9 +64,7 @@
             <!-- Contact Details Column -->
             <div class="col-md-4">
                 <h3>联系方式</h3>
-                <p>
-                    四川省南充市顺庆区师大路一号<br>西华师范大学二期十九公寓一楼<br>
-                </p>
+                <p>四川省南充市顺庆区师大路一号<br>西华师范大学二期十九公寓一楼<br></p>
                 <p><i class="fa fa-phone"></i> 
                     <abbr title="Phone">P</abbr>: (123) 456-7890</p>
                 <p><i class="fa fa-envelope-o"></i> 

@@ -1,9 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,10 +41,10 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">404
-                    <small>Page Not Found</small>
+                    <small>请求的资源没找到</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
+                    <li><a href="index.jsp">首页</a>
                     </li>
                     <li class="active">404</li>
                 </ol>
@@ -60,70 +58,59 @@
                 <div class="jumbotron">
                     <h1><span class="error-404">404</span>
                     </h1>
-                    <p>The page you're looking for could not be found. Here are some helpful links to get you back on track:</p>
+                    <p>十分对不起，您所请求的资源未能找到，以下的链接可能会帮助到您:</p>
                     <ul>
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="index.jsp"><i class="fa fa-fw fa-home"></i> 首页</a>
                         </li>
                         <li>
-                            <a href="about.html">About</a>
+                            <a href="about.html"><i class="fa fa-fw fa-bullhorn"></i> 新闻中心</a>
                         </li>
                         <li>
-                            <a href="services.html">Services</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                        <li>
-                            Portfolio
+                            	社联概况
                             <ul>
                                 <li>
-                                    <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                                    <a href="portfolio-1-col.html">社联简介</a>
                                 </li>
                                 <li>
-                                    <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                                    <a href="portfolio-2-col.html">组织部门</a>
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            Blog
+                        <li><i class="fa fa-fw fa-flag"></i> 模范先进
                             <ul>
                                 <li>
-                                    <a href="blog-home-1.html">Blog Home 1</a>
+                                    <a href="portfolio-1-col.html">先进集体</a>
                                 </li>
                                 <li>
-                                    <a href="blog-home-2.html">Blog Home 2</a>
-                                </li>
-                                <li>
-                                    <a href="blog-post.html">Blog Post</a>
+                                    <a href="portfolio-2-col.html">先进个人</a>
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            Other Pages
+                        <li>社团风采
                             <ul>
                                 <li>
-                                    <a href="full-width-page.html">Full Width Page</a>
-                                </li>
-                                <li>
-                                    <a href="sidebar.html">Sidebar Page</a>
-                                </li>
-                                <li>
-                                    <a href="faq.html">FAQ</a>
-                                </li>
-                                <li>
-                                    <a href="404.html">404 Page</a>
-                                </li>
-                                <li>
-                                    <a href="pricing-table.html">Pricing Table</a>
-                                </li>
+	                                <a href="full-width.html">文化艺术类</a>
+	                            </li>
+	                            <li>
+	                                <a href="sidebar.html">理论学习类</a>
+	                            </li>
+	                            <li>
+	                                <a href="faq.html">时间技能类</a>
+	                            </li>
+	                            <li>
+	                                <a href="404.html">学术科技类</a>
+	                            </li>
+	                            <li>
+	                                <a href="pricing.html">体育竞技类</a>
+	                            </li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="download.jsp"><i class="fa fa-fw fa-download"></i> 资源下载</a>
+                        </li>
+                        <li>
+                            <a href="contact.jsp">联系我们</a>
                         </li>
                     </ul>
                 </div>
@@ -131,16 +118,7 @@
 
         </div>
 
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
+        <jsp:include page="foot.jsp"/>
 
     </div>
     <!-- /.container -->

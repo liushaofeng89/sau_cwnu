@@ -1,9 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,6 +29,14 @@
 	<style type="text/css">
 		.panel-heading{
 			padding:3px 15px;
+		}
+		.panel-body{
+			padding:12px;
+		}
+		.new-time{
+			color:#CDCDCD;
+			font-size:12px;
+			float:right;
 		}
 	</style>
 </head>
@@ -89,8 +95,14 @@
                         <h4><i class="fa fa-fw fa-bullhorn"></i> 通知新闻</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
+                    	<ul class="list-unstyled">
+                        	<li><a href="#">西华师范大学社团联合会官网上线</a><span class="new-time">[10-16 22:24]</span></li>
+                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 22:22]</span></li>
+                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 23:22]</span></li>
+                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 20:22]</span></li>
+                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 12:22]</span></li>
+                        </ul>
+                        <a href="#" class="btn btn-default" style="float:right;">查看更多&raquo;</a>
                     </div>
                 </div>
             </div>
@@ -100,8 +112,14 @@
                         <h4><i class="fa fa-fw fa-gift"></i> 最新活动</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
+                    	<ul class="list-unstyled">
+                        	<li><a href="#">西华师范大学社团联合会官网上线</a><span class="new-time">[10-16 22:24]</span></li>
+                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 22:22]</span></li>
+                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 23:22]</span></li>
+                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 20:22]</span></li>
+                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 12:22]</span></li>
+                        </ul>
+                        <a href="#" class="btn btn-default" style="float:right;">查看更多&raquo;</a>
                     </div>
                 </div>
             </div>
@@ -111,8 +129,14 @@
                         <h4><i class="fa fa-fw fa-compass"></i> 活动预告</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
+                    	<ul class="list-unstyled">
+                        	<li><a href="#">西华师范大学社团联合会官网上线</a><span class="new-time">[10-16 22:24]</span></li>
+                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 22:22]</span></li>
+                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 23:22]</span></li>
+                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 20:22]</span></li>
+                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 12:22]</span></li>
+                        </ul>
+                        <a href="#" class="btn btn-default" style="float:right;">查看更多&raquo;</a>
                     </div>
                 </div>
             </div>

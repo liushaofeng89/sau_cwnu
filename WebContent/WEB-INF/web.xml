@@ -6,20 +6,31 @@
 
 
 	<filter>
-		<filter-name>ErrorFilter</filter-name>
-		<filter-class>cn.edu.cwnu.sau.filter.ErrorFilter</filter-class>
+		<description>
+		</description>
+		<display-name>EncodingFilter</display-name>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>cn.edu.cwnu.sau.filter.EncodingFilter</filter-class>
 	</filter>
 	<filter-mapping>
-		<filter-name>ErrorFilter</filter-name>
+		<filter-name>EncodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
-		<dispatcher>REQUEST</dispatcher>
-    	<dispatcher>ERROR</dispatcher>
 	</filter-mapping>
 
+	<error-page>
+		<error-code>404</error-code>
+		<location>/notfound.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+
 	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
 		<welcome-file>default.html</welcome-file>
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
