@@ -19,7 +19,7 @@
                         <a href="index.jsp"><i class="fa fa-fw fa-home"></i> 首页</a>
                     </li>
                     <li>
-                        <a href="services.html"><i class="fa fa-fw fa-bullhorn"></i> 新闻中心</a>
+                        <a href="show-list.jsp?type=news"><i class="fa fa-fw fa-bullhorn"></i> 新闻活动</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">社联概况 <b class="caret"></b></a>
@@ -28,7 +28,7 @@
                                 <a href="portfolio-1-col.html">社联简介</a>
                             </li>
                             <li>
-                                <a href="portfolio-2-col.html">组织部门</a>
+                                <a href="department.jsp">组织部门</a>
                             </li>
                         </ul>
                     </li>
@@ -47,19 +47,19 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">社团风采 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="full-width.html">文化艺术类</a>
+                                <a href="association-type.jsp">文化艺术类</a>
                             </li>
                             <li>
-                                <a href="sidebar.html">理论学习类</a>
+                                <a href="association-type.jsp">理论学习类</a>
                             </li>
                             <li>
-                                <a href="faq.html">时间技能类</a>
+                                <a href="association-type.jsp">时间技能类</a>
                             </li>
                             <li>
-                                <a href="404.html">学术科技类</a>
+                                <a href="association-type.jsp">学术科技类</a>
                             </li>
                             <li>
-                                <a href="pricing.html">体育竞技类</a>
+                                <a href="association-type.jsp">体育竞技类</a>
                             </li>
                         </ul>
                     </li>
