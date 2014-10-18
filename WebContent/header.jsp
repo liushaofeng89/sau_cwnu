@@ -25,7 +25,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">社联概况 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="portfolio-1-col.html">社联简介</a>
+                                <a href="introduction.jsp">社联简介</a>
                             </li>
                             <li>
                                 <a href="department.jsp">组织部门</a>
@@ -36,10 +36,10 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-flag"></i> 模范先进 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="blog-home-1.html">先进集体</a>
+                                <a href="excellent-group.jsp"><i class="fa fa-fw fa-group"></i> 先进集体</a>
                             </li>
                             <li>
-                                <a href="blog-home-2.html">先进个人</a>
+                                <a href="excellent-person.jsp"><i class="fa fa-fw fa-user"></i> 先进个人</a>
                             </li>
                         </ul>
                     </li>

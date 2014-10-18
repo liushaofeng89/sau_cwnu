@@ -70,7 +70,7 @@
                             	社联概况
                             <ul>
                                 <li>
-                                    <a href="portfolio-1-col.html">社联简介</a>
+                                    <a href="introduction.jsp">社联简介</a>
                                 </li>
                                 <li>
                                     <a href="department.jsp">组织部门</a>
@@ -80,12 +80,12 @@
                         <li><i class="fa fa-fw fa-flag"></i> 模范先进
                             <ul>
                                 <li>
-                                    <a href="portfolio-1-col.html">先进集体</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-2-col.html">先进个人</a>
-                                </li>
-                            </ul>
+                                	<a href="excellent-group.jsp"><i class="fa fa-fw fa-group"></i> 先进集体</a>
+	                            </li>
+	                            <li>
+	                                <a href="excellent-person.jsp"><i class="fa fa-fw fa-user"></i> 先进个人</a>
+	                            </li>
+	                            </ul>
                         </li>
                         <li>社团风采
                             <ul>

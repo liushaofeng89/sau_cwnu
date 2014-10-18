@@ -58,20 +58,20 @@
         <div class="row">
             <!-- Map Column -->
             <div class="col-md-8">
-                <!-- Embedded Google Map -->
-                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+            	<div id="allmap" style="height:400px;"></div>
             </div>
             <!-- Contact Details Column -->
             <div class="col-md-4">
                 <h3>联系方式</h3>
-                <p>四川省南充市顺庆区师大路一号<br>西华师范大学二期十九公寓一楼<br></p>
+                <p><i class="fa fa-map-marker"></i> 
+                	&nbsp;四川省南充市顺庆区师大路一号</p>
+                <p><i class="fa fa-road"></i>
+                	西华师范大学新区二期十九公寓一楼<br></p>
                 <p><i class="fa fa-phone"></i> 
-                    <abbr title="Phone">P</abbr>: (123) 456-7890</p>
+                    (123) 456-7890</p>
                 <p><i class="fa fa-envelope-o"></i> 
-                    <abbr title="Email">E</abbr>: <a href="mailto:shetuanfengcai@163.com">shetuanfengcai@163.com</a>
+                    <a href="mailto:shetuanfengcai@163.com">shetuanfengcai@163.com</a>
                 </p>
-                <p><i class="fa fa-clock-o"></i> 
-                    <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
                 <ul class="list-unstyled list-inline list-social-icons">
                     <li>
                         <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
@@ -145,7 +145,20 @@
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
-
+    
+    <!-- Baidu map -->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=QdUwoaIjS61b6XAGmXkQ3WGT"></script>
+	<script type="text/javascript">
+		// 百度地图API功能
+		var map = new BMap.Map("allmap");
+		var point = new BMap.Point(106.074415,30.818921);
+		map.centerAndZoom(point, 20);
+		var marker = new BMap.Marker(point);  // 创建标注
+		map.addOverlay(marker);              // 将标注添加到地图中
+	
+		var label = new BMap.Label("这里就是社联的办公室哦！",{offset:new BMap.Size(20,-10)});
+		marker.setLabel(label);
+	</script>
 </body>
 
 </html>
