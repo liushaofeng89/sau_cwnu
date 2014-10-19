@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="img/logo.ico">
+    <link rel="shortcut icon" href="imgs/logo.ico">
 
     <title>大学生社团联合会 - 新闻中心</title>
 
@@ -70,7 +70,7 @@
                                         <tr>
                                             <th>编号</th>
                                             <th>文章标题</th>
-                                            <th>责任人</th>
+                                            <th>更新部门</th>
                                             <th>访问次数</th>
                                             <th>添加时间</th>
                                         </tr>

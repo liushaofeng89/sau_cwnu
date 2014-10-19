@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="img/logo.ico">
+    <link rel="shortcut icon" href="imgs/logo.ico">
 
     <title>大学生社团联合会 - 先进集体</title>
 
