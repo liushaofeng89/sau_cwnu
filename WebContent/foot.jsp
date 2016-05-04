@@ -3,16 +3,15 @@
         <div class="container">
             <div class="row">
                 <div class="row-content col-lg-3 col-sm-3 col-xs-6">
-                    <h3>Subscribe</h3>
+                    <h3>友情链接</h3>
                     <ul>
-                        <li><a href="#">Newsletter</a></li>
-                        <li><a href="#">RSS feed</a></li>
-                        <li><a href="#">RSS to Email</a></li>
-                        <li><a href="#">Product Hunt</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Pinterest</a></li>
-                        <li><a href="#">Google+</a></li>
+                        <li><a href="#">学校首页</a></li>
+                        <li><a href="#">校团委</a></li>
+                        <li><a href="#">学生会</a></li>
+                        <li><a href="#">素质推展管理中心</a></li>
+                        <li><a href="#">教务处</a></li>
+                        <li><a href="#">川北医学院社团联</a></li>
+                        <li><a href="#">西南石油大学社团联合会</a></li>
                     </ul>
                 </div>
                 <div class="row-content col-lg-3 col-sm-3 col-xs-6">
@@ -42,24 +41,24 @@
                 <div class="row-content col-lg-3 col-sm-3 col-xs-6">
                     <h3>关注我们</h3>
                     <ul>
-                        <li><a href="#">Browse All</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Development</a></li>
-                        <li><a href="#">Hosting</a></li>
-                        <li><a href="#">Round Ups</a></li>
-                        <li><a href="#">Tutorials</a></li>
+                        <li><img src="imgs/sys/weixin.png" alt="西华师范大学大学生社团联合会官方微信公众号" width="140px"></li>
+                    	<li></li>
+                    	<li class="social">
+                    		<a href="http://blog.sina.com.cn/shetuanlianhehuicwnu" target="_blank"><i class="fa fa-tencent-weibo"></i></a>
+                    		<a href="http://blog.sina.com.cn/shetuanlianhehuicwnu" target="_blank"><i class="fa fa-weibo"></i></a>
+                    	</li>
                     </ul>
                 </div>
             </div><!--/.row -->
-        </div><!--/.container-->
-        <hr>
-        <div class="container">
+        	<hr>
 	        <div class="row">
-				<div class="col-lg-8" style="color:white">
+				<div class="col-lg-10" style="color:white">
 					<p>Copyright &copy; sau.cwnu.edu.cn 2016. All Right Reserved.</p>
 				</div>
-				<div class="col-lg-4">
-					<p><a href="http://blog.sina.com.cn/shetuanlianhehuicwnu">新浪微博</a></p>
+				<div class="col-lg-2">
+					<p>
+						
+					</p>
 				</div>
 			</div>
 		</div>

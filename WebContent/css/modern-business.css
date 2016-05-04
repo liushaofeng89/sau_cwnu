@@ -136,11 +136,14 @@ header.carousel .fill {
 	margin:40px 0 30px 34px;
 }
 ul{
-	font-size:13px;
 	line-height:24px;
 	list-style:none;
 	color:#878B91;
 } 
 footer a{
 	color:#FFF;
+}
+.social> a{
+	font-size: 20px;
+	margin: 5px 2px;
 }
