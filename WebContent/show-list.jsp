@@ -199,13 +199,8 @@
         
 	</div>
 	<!-- /.row -->
-    
 		
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <jsp:include page="common_file_front_js.jsp"/>
     
     <!-- DataTables JavaScript -->
     <script src="js/jquery.dataTables.js"></script>

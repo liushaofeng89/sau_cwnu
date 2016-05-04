@@ -41,13 +41,13 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">先进集体
-                    <small>先进集体列表</small>
+                <h1 class="page-header">先进个人
+                    <small>先进个人列表</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.jsp">首页</a>
                     </li>
-                    <li class="active">先进集体</li>
+                    <li class="active">先进个人</li>
                 </ol>
             </div>
         </div>

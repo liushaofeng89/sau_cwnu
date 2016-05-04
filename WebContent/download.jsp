@@ -116,20 +116,8 @@
         
         </div>
         <!-- /.row -->
-    
 		
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    
-    <!-- Script to Activate the Carousel -->
-    <script type="text/javascript">
-	    $('.carousel').carousel({
-	        interval: 5000 //changes the speed
-	    });
-    </script>
+    <jsp:include page="common_file_front_js.jsp"/>
 
 </body>
 
