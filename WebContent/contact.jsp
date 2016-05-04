@@ -128,10 +128,10 @@
         </div>
         <!-- /.row -->
 
-        <jsp:include page="foot.jsp"/>
-
     </div>
     <!-- /.container -->
+    
+    <jsp:include page="foot.jsp"/>
 
     <jsp:include page="common_file_front_js.jsp"/>
 
