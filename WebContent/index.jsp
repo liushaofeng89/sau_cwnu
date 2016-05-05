@@ -11,34 +11,9 @@
 
     <title>大学生社团联合会 - 西华师范大学</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-	<style type="text/css">
-		.panel-heading{
-			padding:3px 15px;
-		}
-		.panel-body{
-			padding:12px;
-		}
-		.new-time{
-			color:#CDCDCD;
-			font-size:12px;
-			float:right;
-		}
-	</style>
+	<jsp:include page="common_resource_css.jsp"/>
+	
+	<link href="css/cn.edu.cwnu.sau.index.css" rel="stylesheet">
 </head>
 
 <body>
@@ -80,73 +55,96 @@
             <span class="icon-next"></span>
         </a>
     </header>
-
+    
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Marketing Icons Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header"></h1>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-bullhorn"></i> 通知新闻</h4>
-                    </div>
-                    <div class="panel-body">
-                    	<ul class="list-unstyled">
-                        	<li><a href="#">西华师范大学社团联合会官网上线</a><span class="new-time">[10-16 22:24]</span></li>
-                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 22:22]</span></li>
-                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 23:22]</span></li>
-                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 20:22]</span></li>
-                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 12:22]</span></li>
-                        </ul>
-                        <a href="#" class="btn btn-default" style="float:right;">查看更多&raquo;</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i> 最新活动</h4>
-                    </div>
-                    <div class="panel-body">
-                    	<ul class="list-unstyled">
-                        	<li><a href="#">西华师范大学社团联合会官网上线</a><span class="new-time">[10-16 22:24]</span></li>
-                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 22:22]</span></li>
-                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 23:22]</span></li>
-                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 20:22]</span></li>
-                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 12:22]</span></li>
-                        </ul>
-                        <a href="#" class="btn btn-default" style="float:right;">查看更多&raquo;</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i> 活动预告</h4>
-                    </div>
-                    <div class="panel-body">
-                    	<ul class="list-unstyled">
-                        	<li><a href="#">西华师范大学社团联合会官网上线</a><span class="new-time">[10-16 22:24]</span></li>
-                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 22:22]</span></li>
-                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 23:22]</span></li>
-                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 20:22]</span></li>
-                        	<li><a href="#">测试数据</a><span class="new-time">[10-16 12:22]</span></li>
-                        </ul>
-                        <a href="#" class="btn btn-default" style="float:right;">查看更多&raquo;</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
+	    <section>
+	    	<div class="container">
+	            <div class="row">
+	                <div class="col-lg-12">
+	
+					  <div class="tabbable-panel">
+				<div class="tabbable-line">
+					<ul class="nav nav-tabs ">
+						<li class="active"><a href="#notice" data-toggle="tab"><i class="fa fa-fw fa-bullhorn"></i> 重要通知</a></li>
+						<li><a href="#activity" data-toggle="tab"><i class="fa fa-fw fa-send-o"></i> 社团活动</a></li>
+						<li><a href="#preview" data-toggle="tab"><i class="fa fa-fw fa-life-saver"></i> 活动预告</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="notice">
+							<p>
+								Duis autem eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
+							</p>
+						</div>
+						<div class="tab-pane" id="activity">
+							<p>
+								Howdy, I'm in Tab 2.
+							</p>
+							<p>
+								Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.
+							</p>
+						</div>
+						<div class="tab-pane" id="preview">
+							<p>
+								Howdy, I'm in Tab 3.
+							</p>
+							<p>
+								Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+	    
+	    
+	    <!-- Services Section -->
+	    <section id="services">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-12 text-center">
+	                    <h2 class="section-heading">Services</h2>
+	                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+	                </div>
+	            </div>
+	            <div class="row text-center">
+	                <div class="col-md-4">
+	                    <span class="fa-stack fa-4x">
+	                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+	                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+	                    </span>
+	                    <h4 class="service-heading">E-Commerce</h4>
+	                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+	                </div>
+	                <div class="col-md-4">
+	                    <span class="fa-stack fa-4x">
+	                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+	                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+	                    </span>
+	                    <h4 class="service-heading">Responsive Design</h4>
+	                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+	                </div>
+	                <div class="col-md-4">
+	                    <span class="fa-stack fa-4x">
+	                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+	                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+	                    </span>
+	                    <h4 class="service-heading">Web Security</h4>
+	                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
 
         <!-- Portfolio Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Portfolio Heading</h2>
+                <h2 class="page-header">精彩活动</h2>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
@@ -177,30 +175,6 @@
                 <a href="portfolio-item.html">
                     <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
                 </a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Features Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Modern Business Features</h2>
-            </div>
-            <div class="col-md-6">
-                <p>The Modern Business template by Start Bootstrap includes:</p>
-                <ul>
-                    <li><strong>Bootstrap v3.2.0</strong>
-                    </li>
-                    <li>jQuery v1.11.0</li>
-                    <li>Font Awesome v4.1.0</li>
-                    <li>Working PHP contact form with validation</li>
-                    <li>Unstyled page elements for easy customization</li>
-                    <li>17 HTML pages</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
             </div>
         </div>
         <!-- /.row -->
@@ -236,7 +210,7 @@
 	
 	<jsp:include page="foot.jsp"/>
 
-	<jsp:include page="common_file_front_js.jsp"/>
+	<jsp:include page="common_resource_js.jsp"/>
 	
     <!-- Script to Activate the Carousel -->
     <script>

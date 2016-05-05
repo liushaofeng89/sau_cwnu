@@ -8,7 +8,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.jsp">Student Association Union of CWNU</a>
+			<a class="navbar-brand" href="index.jsp">大学生社团联合会</a>
 		</div>
 		
 		<div class="collapse navbar-collapse js-navbar-collapse">
@@ -118,9 +118,6 @@
 						</li>
 	                    <li>
 	                        <a href="download.jsp"><i class="fa fa-fw fa-download"></i> 资料下载</a>
-	                    </li>
-	                    <li>
-	                        <a href="contact.jsp">联系我们</a>
 	                    </li>
 	      </ul>
 		</div><!-- /.nav-collapse -->
