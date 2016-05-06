@@ -68,7 +68,7 @@
 				<div class="tabbable-line">
 					<ul class="nav nav-tabs ">
 						<li class="active"><a href="#notice" data-toggle="tab"><i class="fa fa-fw fa-bullhorn"></i> 重要通知</a></li>
-						<li><a href="#activity" data-toggle="tab"><i class="fa fa-fw fa-send-o"></i> 社团活动</a></li>
+						<li><a href="#activity" data-toggle="tab"><i class="fa fa-fw fa-fire"></i> 社团活动</a></li>
 						<li><a href="#preview" data-toggle="tab"><i class="fa fa-fw fa-life-saver"></i> 活动预告</a></li>
 					</ul>
 					<div class="tab-content">
