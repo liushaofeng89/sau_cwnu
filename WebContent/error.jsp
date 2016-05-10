@@ -7,5 +7,5 @@
 </head>
 <body>
 </body>
-<script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homePageUrl="index.jsp" homePageName="返回社联首页"></script>
+<script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homePageUrl="<%=request.getContextPath()%>/index" homePageName="返回社联首页"></script>
 </html>

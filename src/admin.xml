@@ -7,9 +7,31 @@
 
 	<package name="admin" namespace="/admin" extends="default">
 
-		<action name="index">
-			<result name="success" type="">/admin/index.jsp</result> 
-		</action>
+		<interceptors>
+			<interceptor name="authority" class="cn.edu.cwnu.sau.interceptor.AuthorizationInterceptor" />
+
+			<interceptor-stack name="authority-stack">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="authority" />
+			</interceptor-stack>
+		</interceptors>
+
+		<default-interceptor-ref name="authority-stack"></default-interceptor-ref>
 		
+		<action name="login">
+			<result type="redirectAction">
+				<param name="actionName">login</param>
+				<param name="namespace">/</param>
+			</result>
+		</action>
+
+		<action name="index" class="cn.edu.cwnu.sau.action.admin.IndexAction">
+			<result name="success">/admin/index.jsp</result>
+			<result name="login" type="redirectAction">
+				<param name="actionName">login</param>
+				<param name="namespace">/</param>
+			</result>
+		</action>
+
 	</package>
 </struts>

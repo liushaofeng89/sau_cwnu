@@ -8,27 +8,21 @@
 	<constant name="struts.devMode" value="true" />
 
 	<package name="default" namespace="/" extends="struts-default">
+		
+		<action name="index">
+			<result name="success">/_index.jsp</result>
+		</action>
 
-		<interceptors>
-			<interceptor name="authority"
-				class="com.wyhouseservice.interceptor.AuthorizationInterceptor" />
-
-			<interceptor-stack name="authority-stack">
-				<interceptor-ref name="defaultStack" />
-				<interceptor-ref name="authority" />
-			</interceptor-stack>
-		</interceptors>
-
-		<action name="login" class="cn.edu.cwnu.sau.action.admin.LoginAction">
+		<action name="login" class="cn.edu.cwnu.sau.action.ui.LoginAction">
 			<result name="success">/_login.jsp</result>
 		</action>
 		
-		<action name="checkAuth" class="cn.edu.cwnu.sau.action.admin.LoginAction" method="checkAuth">
+		<action name="checkAuth" class="cn.edu.cwnu.sau.action.ui.LoginAction" method="checkAuth">
 			<result name="error">/_login.jsp</result>
 			<result name="success" type="redirect">/admin/index</result>
 		</action>
 		
-		<action name="logout" class="cn.edu.cwnu.sau.action.admin.LoginAction" method="logout">
+		<action name="logout" class="cn.edu.cwnu.sau.action.ui.LoginAction" method="logout">
 			<result name="success">/index.jsp</result>
 		</action>
 

@@ -1,8 +1,11 @@
 /**
  * 
  */
-package cn.edu.cwnu.sau.action.admin;
+package cn.edu.cwnu.sau.action.ui;
 
+import cn.edu.cwnu.sau.util.ISAUConstant;
+
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
 /**
@@ -34,6 +37,7 @@ public class LoginAction extends ActionSupport
      */
     public String checkAuth()
     {
+        ActionContext.getContext().getSession().put(ISAUConstant.USER_SESSION, username);
         System.out.println(username + "  " + password);
         return ActionSupport.SUCCESS;
     }

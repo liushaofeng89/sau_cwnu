@@ -4,9 +4,9 @@ import java.util.Map;
 
 import cn.edu.cwnu.sau.util.ISAUConstant;
 
-import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionInvocation;
+import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 
 /**
@@ -34,7 +34,7 @@ public class AuthorizationInterceptor extends AbstractInterceptor
         }
 
         ctx.put("tip", "你还没有登录");
-        return Action.LOGIN;
+        return ActionSupport.LOGIN;
     }
 
 }

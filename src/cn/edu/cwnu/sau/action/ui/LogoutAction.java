@@ -1,7 +1,7 @@
 /**
  * 
  */
-package cn.edu.cwnu.sau.action.admin;
+package cn.edu.cwnu.sau.action.ui;
 
 import com.opensymphony.xwork2.ActionSupport;
 
