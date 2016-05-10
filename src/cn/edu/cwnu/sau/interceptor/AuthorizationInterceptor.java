@@ -1,11 +1,12 @@
 package cn.edu.cwnu.sau.interceptor;
 
-import javax.servlet.http.HttpServletRequest;
+import java.util.Map;
 
-import org.apache.struts2.ServletActionContext;
+import cn.edu.cwnu.sau.util.ISAUConstant;
 
+import com.opensymphony.xwork2.Action;
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionInvocation;
-import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 
 /**
@@ -21,9 +22,19 @@ public class AuthorizationInterceptor extends AbstractInterceptor
     private static final long serialVersionUID = 4611905444186419742L;
 
     @Override
-    public String intercept(ActionInvocation arg0) throws Exception
+    public String intercept(ActionInvocation invocation) throws Exception
     {
-        return arg0.invoke();
+        ActionContext ctx = invocation.getInvocationContext();
+        Map<String, Object> session = ctx.getSession();
+        String user = (String) session.get(ISAUConstant.USER_SESSION);
+
+        if (user != null)
+        {
+            return invocation.invoke();
+        }
+
+        ctx.put("tip", "你还没有登录");
+        return Action.LOGIN;
     }
 
 }

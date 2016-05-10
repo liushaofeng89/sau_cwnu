@@ -4,31 +4,38 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
 
-    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
-    <constant name="struts.devMode" value="true" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
 
-    <package name="default" namespace="/" extends="struts-default">
+	<package name="default" namespace="/" extends="struts-default">
 
-        <default-action-ref name="index" />
+		<interceptors>
+			<interceptor name="authority"
+				class="com.wyhouseservice.interceptor.AuthorizationInterceptor" />
 
-        <global-results>
-            <result name="error">/error.jsp</result>
-        </global-results>
+			<interceptor-stack name="authority-stack">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="authority" />
+			</interceptor-stack>
+		</interceptors>
 
-        <global-exception-mappings>
-            <exception-mapping exception="java.lang.Exception" result="error"/>
-        </global-exception-mappings>
+		<action name="login" class="cn.edu.cwnu.sau.action.admin.LoginAction">
+			<result name="success">/_login.jsp</result>
+		</action>
+		
+		<action name="checkAuth" class="cn.edu.cwnu.sau.action.admin.LoginAction" method="checkAuth">
+			<result name="error">/_login.jsp</result>
+			<result name="success" type="redirect">/admin/index</result>
+		</action>
+		
+		<action name="logout" class="cn.edu.cwnu.sau.action.admin.LoginAction" method="logout">
+			<result name="success">/index.jsp</result>
+		</action>
 
-        <action name="index">
-            <result type="redirectAction">
-                <param name="actionName">HelloWorld</param>
-                <param name="namespace">/example</param>
-            </result>
-        </action>
-    </package>
+	</package>
 
-    <include file="admin.xml"/>
+	<include file="admin.xml" />
 
-    <!-- Add packages here -->
+	<!-- Add packages here -->
 
 </struts>

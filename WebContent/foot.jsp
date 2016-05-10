@@ -35,7 +35,7 @@
                 <div class="row-content col-lg-2 col-sm-2 col-xs-6">
                     <h3>关注我们</h3>
                     <ul>
-                        <li><img src="imgs/sys/weixin.png" alt="西华师范大学大学生社团联合会官方微信公众号" width="140px"></li>
+                        <li><img src="imgs/sys/weixin_saucwnu.png" alt="西华师范大学大学生社团联合会官方微信公众号" width="140px"></li>
                     	<li></li>
                     	<li class="social">
                     		<a href="http://blog.sina.com.cn/shetuanlianhehuicwnu" target="_blank"><i class="fa fa-tencent-weibo"></i></a>

@@ -5,21 +5,11 @@
 
 <struts>
 
-    <package name="example" namespace="/example" extends="default">
+	<package name="admin" namespace="/admin" extends="default">
 
-        <action name="HelloWorld" class="example.HelloWorld">
-            <result>/example/HelloWorld.jsp</result>
-        </action>
-
-        <action name="Login_*" method="{1}" class="example.Login">
-            <result name="input">/example/Login.jsp</result>
-            <result type="redirectAction">Menu</result>
-        </action>
-
-        <action name="*" class="example.ExampleSupport">
-            <result>/example/{1}.jsp</result>
-        </action>
-
-        <!-- Add actions here -->
-    </package>
+		<action name="index">
+			<result name="success" type="">/admin/index.jsp</result> 
+		</action>
+		
+	</package>
 </struts>

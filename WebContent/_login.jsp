@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,10 +14,10 @@
 <title>大学生社团联合会网站后台管理系统登录 - 西华师范大学</title>
 
 <!-- Bootstrap Core CSS -->
-<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom Fonts -->
-<link href="../font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,7 +29,7 @@
 <style type="text/css">
 body {
 	background:
-		url('../imgs/sys/login_bg.jpg')
+		url('imgs/sys/login_bg.jpg')
 		fixed;
 	background-size: cover;
 	padding: 0;
@@ -200,9 +201,10 @@ form.login a:hover {
 			<div class="col-md-12">
 				<div class="wrap">
 					<p class="form-title">大学生社团联合会后台管理系统</p>
-					<form class="login">
-						<input type="text" placeholder="用户名或会员号" /> <input type="password" placeholder="密码" /> <input type="submit" value="登录"
-							class="btn btn-success btn-sm" />
+					<form class="login" action="checkAuth" method="post">
+						<input type="text" placeholder="用户名或会员号" name="username"/> 
+						<input type="password" placeholder="密码" name="password"/> 
+						<input type="submit" value="登录" class="btn btn-success btn-sm" />
 						<div class="remember-forgot">
 							<div class="row">
 								<div class="col-md-6">
@@ -225,10 +227,10 @@ form.login a:hover {
 
 
 	<!-- jQuery Version 1.11.0 -->
-	<script src="../js/jquery-1.11.0.js"></script>
+	<script src="js/jquery-1.11.0.js"></script>
 
 	<!-- Bootstrap Core JavaScript -->
-	<script src="../js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {

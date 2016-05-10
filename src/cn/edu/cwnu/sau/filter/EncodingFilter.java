@@ -10,7 +10,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import cn.edu.cwnu.sau.util.IConstant;
+import cn.edu.cwnu.sau.util.ISAUConstant;
 
 /**
  * 编码过滤器
@@ -46,8 +46,8 @@ public class EncodingFilter implements Filter
 		HttpServletRequest req = (HttpServletRequest) request;
 		HttpServletResponse resp = (HttpServletResponse) response;
 
-		req.setCharacterEncoding(IConstant.ENCODING_UTF8);
-		resp.setCharacterEncoding(IConstant.ENCODING_UTF8);
+		req.setCharacterEncoding(ISAUConstant.ENCODING_UTF8);
+		resp.setCharacterEncoding(ISAUConstant.ENCODING_UTF8);
 		chain.doFilter(request, response);
 	}
 

@@ -16,8 +16,7 @@
 <link href="css/cn.edu.cwnu.sau.index.css" rel="stylesheet">
 </head>
 <style>
-.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td,
-	.table>tbody>tr>td, .table>tfoot>tr>td {
+.table>thead>tr>td, .table>tbody>tr>td {
 	border-top: none;
 	border-bottom: dashed 1px #efefef;
 }
@@ -92,17 +91,22 @@
 												<tr>
 													<td>【图文】<a href="#">建校70周年文艺汇演预演公告</a></td>
 													<td class="time">2016/4/18 18:29:28</td>
-													<td class="view">点击：12</td>
+													<td class="view"><i class="fa fa-fw fa-eye"></i>12</td>
 												</tr>
 												<tr>
 													<td>【图文】<a href="#">2015—2016年度五·四评优情况公示</a></td>
 													<td class="time">2016/4/17 22:29:38</td>
-													<td class="view">点击：2344</td>
+													<td class="view"><i class="fa fa-fw fa-eye"></i>2344</td>
 												</tr>
 												<tr>
 													<td>【图文】<a href="#">西华师范大学70周年校庆志愿者拟录取人员公示</a></td>
 													<td class="time">2016/4/16 10:31:28</td>
-													<td class="view">点击：12313</td>
+													<td class="view"><i class="fa fa-fw fa-eye"></i>12313</td>
+												</tr>
+												<tr>
+													<td></td>
+													<td></td>
+													<td class="view"><a href="#">查看更多&rarr;</a></td>
 												</tr>
 											</tbody>
 										</table>
@@ -113,17 +117,17 @@
 												<tr>
 													<td>【图文】<a href="#">师大70年 学校50余个学生社团共迎校庆</a></td>
 													<td class="time">2016/4/18 18:29:28</td>
-													<td class="view">12</td>
+													<td class="view"><i class="fa fa-fw fa-eye"></i>12</td>
 												</tr>
 												<tr>
 													<td>【图文】<a href="#">学校举行学生干部座谈会</a></td>
 													<td class="time">2016/4/17 22:29:38</td>
-													<td class="view">2344</td>
+													<td class="view"><i class="fa fa-fw fa-eye"></i>2344</td>
 												</tr>
 												<tr>
 													<td>【图文】<a href="#">学校召开2016年上学期共青团工作推进会</a></td>
 													<td class="time">2016/4/16 10:31:28</td>
-													<td class="view">12313</td>
+													<td class="view"><i class="fa fa-fw fa-eye"></i>12313</td>
 												</tr>
 											</tbody>
 										</table>
@@ -136,21 +140,21 @@
 													<td>新区一期迎曦湖</td>
 													<td>魔术协会</td>
 													<td class="time">2016-05-23</td>
-													<td class="view">12</td>
+													<td class="view"><i class="fa fa-fw fa-eye"></i>12</td>
 												</tr>
 												<tr>
 													<td><a href="#">学校举行学生干部座谈会</a></td>
 													<td>老区食堂二楼</td>
 													<td>计算机协会</td>
 													<td class="time">2016-05-12</td>
-													<td class="view">2344</td>
+													<td class="view"><i class="fa fa-fw fa-eye"></i>2344</td>
 												</tr>
 												<tr>
 													<td><a href="#">学校召开2016年上学期共青团工作推进会</a></td>
 													<td>新区二期灯光球场</td>
 													<td>大风文学社</td>
 													<td class="time">2016-05-12</td>
-													<td class="view">12313</td>
+													<td class="view"><i class="fa fa-fw fa-eye"></i>12313</td>
 												</tr>
 											</tbody>
 										</table>
