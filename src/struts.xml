@@ -12,6 +12,10 @@
 		<action name="index">
 			<result name="success">/_index.jsp</result>
 		</action>
+		
+		<action name="download" class="cn.edu.cwnu.sau.action.ui.DownloadAction">
+			<result name="success">/_download.jsp</result>
+		</action>
 
 		<action name="login" class="cn.edu.cwnu.sau.action.ui.LoginAction">
 			<result name="success">/_login.jsp</result>
@@ -24,6 +28,10 @@
 		
 		<action name="logout" class="cn.edu.cwnu.sau.action.ui.LoginAction" method="logout">
 			<result name="success">/index.jsp</result>
+		</action>
+		
+		<action name="forget">
+			<result name="success">_forget.jsp</result>
 		</action>
 
 	</package>

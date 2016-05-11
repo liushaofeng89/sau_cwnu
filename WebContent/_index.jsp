@@ -6,7 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="author" content="">
+<meta name="author" content="刘少锋">
+<meta name="keywords" content="西华师范大学大学生社团联合会，大学生社团联合会，社团联，社团，学生组织，协会，学会，西华师大，西华师范大学，南充，高校">
 <link rel="shortcut icon" href="imgs/logo.ico">
 
 <title>大学生社团联合会 - 西华师范大学</title>
@@ -15,22 +16,6 @@
 
 <link href="css/cn.edu.cwnu.sau.index.css" rel="stylesheet">
 </head>
-<style>
-.table>thead>tr>td, .table>tbody>tr>td {
-	border-top: none;
-	border-bottom: dashed 1px #efefef;
-}
-
-.time {
-	width: 15%;
-	color: #cdcdcd;
-}
-
-.view {
-	width: 10%;
-	color: #cdcdcd;
-}
-</style>
 
 <body>
 
@@ -129,6 +114,11 @@
 													<td class="time">2016/4/16 10:31:28</td>
 													<td class="view"><i class="fa fa-fw fa-eye"></i>12313</td>
 												</tr>
+												<tr>
+													<td></td>
+													<td></td>
+													<td class="view"><a href="#">查看更多&rarr;</a></td>
+												</tr>
 											</tbody>
 										</table>
 									</div>
@@ -156,6 +146,11 @@
 													<td class="time">2016-05-12</td>
 													<td class="view"><i class="fa fa-fw fa-eye"></i>12313</td>
 												</tr>
+												<tr>
+													<td></td>
+													<td></td>
+													<td class="view"><a href="#">查看更多&rarr;</a></td>
+												</tr>
 											</tbody>
 										</table>
 									</div>
@@ -165,6 +160,16 @@
 
 					</div>
 				</div>
+			</div>
+		</section>
+		
+		<section class="promo box box-dark">        
+            <div class="col-md-9">
+                <h1 class="section-heading">欢迎2016级新同学</h1>
+                <p>西华师范大学社团联合会成立于1996年3月15日，现下设有57个学生社团，是一个在校团委的关心和支持下的专门管理各学生社团的联合组织。</p>   
+            </div>  
+            <div class="col-md-3">
+            	<a class="btn btn-cta" href="#"><i class="fa fa-play-circle"></i>查看视频</a>  
 			</div>
 		</section>
 

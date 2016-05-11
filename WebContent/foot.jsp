@@ -46,12 +46,12 @@
             </div><!--/.row -->
         	<hr>
 	        <div class="row">
-				<div class="col-lg-10" style="color:white">
+				<div class="col-lg-9" style="color:white">
 					<p>Copyright &copy; sau.cwnu.edu.cn 2016. All Right Reserved.</p>
 				</div>
-				<div class="col-lg-2" style="color:white">
+				<div class="col-lg-3" style="color:white">
 					<p>
-						<a href="contact.jsp">联系我们</a> | <a href="#">问题反馈</a> | <a href="#">查询</a>
+						<a href="_contact.jsp">联系我们</a> | <a href="_faq.jsp">FAQ</a> | <a href="#">问题反馈</a> | <a href="#">查询</a> | <a href="#">论坛</a>
 					</p>
 				</div>
 			</div>

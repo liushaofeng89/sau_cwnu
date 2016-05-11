@@ -11,26 +11,9 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../imgs/logo.ico">
 
-    <title>大学生社团联合会网站后台管理系统</title>
+    <title>大学生社团联合会网站后台管理系统 - 西华师范大学</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="../css/sb-admin.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <link href="../css/plugins/morris.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="../font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<jsp:include page="common_resource_css.jsp" />
 
 </head>
 
@@ -48,7 +31,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">西华师范大学大学生社团联合会网站后台管理系统</a>
+                <a class="navbar-brand" href="index">大学生社团联合会网站后台管理系统</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -133,20 +116,20 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> liushaofeng <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> 个人中心</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> 消息</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> 设置</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="../index.jsp"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="../index.jsp"><i class="fa fa-fw fa-power-off"></i> 注销</a>
                         </li>
                     </ul>
                 </li>
@@ -155,19 +138,19 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="index.html"><i class="fa fa-fw fa-bar-chart-o"></i> 网站统计</a>
+                        <a href="index"><i class="fa fa-fw fa-dashboard"></i> 网站统计</a>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> 内容发布 <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-edit"></i> 内容发布 <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="#">通知公告</a>
+                                <a href="#"><i class="fa fa-fw fa-bullhorn"></i> 重要通知</a>
                             </li>
                             <li>
-                                <a href="#">活动新闻</a>
+                                <a href="#"><i class="fa fa-fw fa-fire"></i> 社团活动</a>
                             </li>
                             <li>
-                                <a href="#">活动预告</a>
+                                <a href="#"><i class="fa fa-fw fa-life-saver"></i> 活动预告</a>
                             </li>
                         </ul>
                     </li>
@@ -482,17 +465,8 @@
 
     </div>
     <!-- /#wrapper -->
-
-    <!-- jQuery Version 1.11.0 -->
-    <script src="../js/jquery-1.11.0.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
-
-    <!-- Morris Charts JavaScript -->
-    <script src="../js/plugins/morris/raphael.min.js"></script>
-    <script src="../js/plugins/morris/morris.min.js"></script>
-    <script src="../js/plugins/morris/morris-data.js"></script>
+    
+	<jsp:include page="common_resource_js.jsp" />
 
 </body>
 

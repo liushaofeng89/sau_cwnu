@@ -8,12 +8,12 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.jsp">大学生社团联合会</a>
+			<a class="navbar-brand" href="index">大学生社团联合会</a>
 		</div>
 		
 		<div class="collapse navbar-collapse js-navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-	            <li><a href="index.jsp"><i class="fa fa-fw fa-home"></i> 首页</a></li>
+	            <li><a href="index"><i class="fa fa-fw fa-home"></i> 首页</a></li>
 	            <li>
 	                        <a href="show-list.jsp?type=news"><i class="fa fa-fw fa-bullhorn"></i> 新闻活动</a>
 	                    </li>
@@ -114,10 +114,16 @@
 										<li><a href="#">排球协会</a></li>                         
 									</ul>
 								</li>
+								<li class="col-sm-2">
+									<ul>
+										<li class="dropdown-header">社团申请</li>  
+										<li><a href="#">申请材料</a></li>                  
+									</ul>
+								</li>
 							</ul>				
 						</li>
 	                    <li>
-	                        <a href="download.jsp"><i class="fa fa-fw fa-download"></i> 资料下载</a>
+	                        <a href="download"><i class="fa fa-fw fa-download"></i> 资料下载</a>
 	                    </li>
 	      </ul>
 		</div><!-- /.nav-collapse -->
