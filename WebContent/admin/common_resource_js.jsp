@@ -5,7 +5,12 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.min.js"></script>
 
-<!-- Morris Charts JavaScript -->
-<script src="js/plugins/morris/raphael.min.js"></script>
-<script src="js/plugins/morris/morris.min.js"></script>
-<script src="js/plugins/morris/morris-data.js"></script>
+<!-- Metis Menu Plugin JavaScript -->
+<script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+
+<!-- DataTables JavaScript -->
+<script src="../js/plugins/dataTables/jquery.dataTables.js"></script>
+<script src="../js/plugins/dataTables/dataTables.bootstrap.js"></script>
+
+<!-- Left Menu Manage -->
+<script src="js/cn.edu.cwnu.sau.admin.js"></script>

@@ -32,6 +32,10 @@
 				<param name="namespace">/</param>
 			</result>
 		</action>
+		
+		<action name="notices" class="cn.edu.cwnu.sau.action.admin.NoticeAction">
+			<result name="success">/admin/notice.jsp</result>
+		</action>
 
 	</package>
 </struts>
