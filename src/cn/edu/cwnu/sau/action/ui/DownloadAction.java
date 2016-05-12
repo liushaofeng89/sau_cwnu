@@ -11,6 +11,8 @@ import com.opensymphony.xwork2.ActionSupport;
 public class DownloadAction extends ActionSupport
 {
 
+    private static final long serialVersionUID = 5339891134212245043L;
+
     @Override
     public String execute() throws Exception
     {

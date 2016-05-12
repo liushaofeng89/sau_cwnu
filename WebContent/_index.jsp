@@ -15,6 +15,7 @@
 <jsp:include page="common_resource_css.jsp" />
 
 <link href="css/cn.edu.cwnu.sau.index.css" rel="stylesheet">
+<script src="js/html5media.min.js"></script>
 </head>
 
 <body>
@@ -205,6 +206,18 @@
 						<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
 							dicta impedit.</p>
 					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section>
+			<div class="container">
+				<div class="row">
+					<video class="video" poster="//media.html5media.info/poster.jpg" width="618" height="347" controls="" preload="">
+						<source src="//media.html5media.info/video.mp4" media="only screen and (min-device-width: 568px)">
+						<source src="//media.html5media.info/video.iphone.mp4" media="only screen and (max-device-width: 568px)">
+						<source src="//media.html5media.info/video.ogv">
+					</video>
 				</div>
 			</div>
 		</section>
