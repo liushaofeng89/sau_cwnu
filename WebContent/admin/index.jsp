@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
-<s:set name="test" value="index" scope="page"/>
+<s:set name="test" value="sgdfgsd" scope="page"/>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +21,7 @@
 		<div id="page-wrapper">
 			<div class="row">
 				<div class="col-lg-12">
-					<h2 class="page-header">系统信息总览</h2>
+					<h2 class="page-header">系统信息总览<s:property value="#test"/></h2>
 				</div>
 				<!-- /.col-lg-12 -->
 			</div>
