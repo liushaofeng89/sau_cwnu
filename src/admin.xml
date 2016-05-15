@@ -18,24 +18,26 @@
 
 		<default-interceptor-ref name="authority-stack"></default-interceptor-ref>
 		
-		<action name="login">
-			<result type="redirectAction">
-				<param name="actionName">login</param>
-				<param name="namespace">/</param>
-			</result>
-		</action>
-
-		<action name="index" class="cn.edu.cwnu.sau.action.admin.IndexAction">
-			<result name="success">/admin/index.jsp</result>
+		<global-results>
 			<result name="login" type="redirectAction">
 				<param name="actionName">login</param>
 				<param name="namespace">/</param>
 			</result>
+		</global-results>
+
+		<action name="index" class="cn.edu.cwnu.sau.action.admin.IndexAction">
+			<result name="success">/admin/index.jsp</result>
 		</action>
 		
 		<action name="notices" class="cn.edu.cwnu.sau.action.admin.NoticeAction">
 			<result name="success">/admin/notice.jsp</result>
 		</action>
-
+		
+		<action name="upload" class="cn.edu.cwnu.sau.action.admin.CKEditorFileManageAction" method="upload">
+		</action>
+		
+		<action name="browse" class="cn.edu.cwnu.sau.action.admin.CKEditorFileManageAction" method="browse">
+		</action>
+		
 	</package>
 </struts>

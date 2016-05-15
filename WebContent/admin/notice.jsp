@@ -457,9 +457,7 @@
 						<div class="tab-pane fade" id="add">
 							<div class="row">
 								<div class="col-lg-12">
-									<textarea name="saueditor" id="saueditor" rows="10" cols="80">
-						                This is my textarea to be replaced with CKEditor.
-						            </textarea>
+									<textarea name="saueditor" id="saueditor" rows="10" cols="80">在这里添加文章内容.</textarea>
 								</div>
 							</div>
 						</div>
@@ -475,7 +473,8 @@
 
 	<jsp:include page="common_resource_js.jsp" />
 	
-	 <script src="./js/plugins/ckeditor/ckeditor.js"></script>
+	<script src="./js/plugins/ckeditor/ckeditor.js"></script>
+	<script src="./js/cn.edu.cwnu.sau.ckeditor.config.js"></script>
 	
 </body>
 <script type="text/javascript">
@@ -504,9 +503,5 @@
         paging: true,
         pagingType: "full_numbers"//分页样式的类型		
 	});
-	
-	// Replace the <textarea id="editor1"> with a CKEditor
-    // instance, using default configuration.
-    CKEDITOR.replace( 'saueditor' );
 </script>
 </html>
