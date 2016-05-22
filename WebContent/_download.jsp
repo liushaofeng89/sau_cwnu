@@ -13,11 +13,7 @@
 
     <jsp:include page="common_resource_css.jsp"/>
     
-	<style type="text/css">
-		.panel-heading{
-			padding:3px 15px;
-		}
-	</style>
+
 </head>
 
 <body>
@@ -35,7 +31,7 @@
                     <small>当前系统开放资源</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.jsp">首页</a>
+                    <li><a href="index">首页</a>
                     </li>
                     <li class="active">资源下载</li>
                 </ol>
@@ -97,10 +93,10 @@
             </div>                
             <!-- /.panel-group -->
             </div>
-            <!-- /.col-lg-12 -->
+            <!-- /.row -->
         
         </div>
-        <!-- /.row -->
+        <!-- /.container -->
         
 	    <jsp:include page="foot.jsp"/>
 			

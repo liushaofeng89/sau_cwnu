@@ -51,7 +51,7 @@
 				</div>
 				<div class="col-lg-3" style="color:white">
 					<p>
-						<a href="_contact.jsp">联系我们</a> | <a href="_faq.jsp">FAQ</a> | <a href="#">问题反馈</a> | <a href="#">查询</a> | <a href="#">论坛</a>
+						<a href="contact">联系我们</a> | <a href="faq">FAQ</a> | <a href="feedback">问题反馈</a> | <a href="login">查询</a> | <a href="bbs">论坛</a>
 					</p>
 				</div>
 			</div>

@@ -3,16 +3,15 @@ package cn.edu.cwnu.sau.action.ui;
 import com.opensymphony.xwork2.ActionSupport;
 
 /**
- * 
- * 系统首页
+ * ForgetAction
  * @author liushaofeng
- * @date 2016年5月7日
+ * @date 2016年5月22日
  * @version 1.0.0
  */
-public class IndexAction extends ActionSupport
+public class ForgetAction extends ActionSupport
 {
 
-    private static final long serialVersionUID = -5761657744048314593L;
+    private static final long serialVersionUID = 1212679336473576561L;
 
     @Override
     public String execute() throws Exception

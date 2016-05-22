@@ -16,6 +16,10 @@
 
 <link href="css/cn.edu.cwnu.sau.index.css" rel="stylesheet">
 <script src="js/html5media.min.js"></script>
+
+<!-- Add fancyBox main JS and CSS files -->
+<link rel="stylesheet" type="text/css" href="css/plugins/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+
 </head>
 
 <body>
@@ -150,6 +154,8 @@
 												<tr>
 													<td></td>
 													<td></td>
+													<td></td>
+													<td></td>
 													<td class="view"><a href="#">查看更多&rarr;</a></td>
 												</tr>
 											</tbody>
@@ -166,11 +172,11 @@
 		
 		<section class="promo box box-dark">        
             <div class="col-md-9">
-                <h1 class="section-heading">欢迎2016级新同学</h1>
+                <h1 class="section-heading">庆祝西华师范大学建校70周年</h1>
                 <p>西华师范大学社团联合会成立于1996年3月15日，现下设有57个学生社团，是一个在校团委的关心和支持下的专门管理各学生社团的联合组织。</p>   
             </div>  
             <div class="col-md-3">
-            	<a class="btn btn-cta" href="#"><i class="fa fa-play-circle"></i>查看视频</a>  
+            	<a class="btn btn-cta fancybox" href="http://player.youku.com/player.php/sid/XMTU1MTM3Nzk3Ng==/v.swf"><i class="fa fa-play-circle"></i>70周年校庆</a>  
 			</div>
 		</section>
 
@@ -210,41 +216,29 @@
 			</div>
 		</section>
 		
-		<section>
-			<div class="container">
-				<div class="row">
-					<video class="video" poster="//media.html5media.info/poster.jpg" width="618" height="347" controls="" preload="">
-						<source src="//media.html5media.info/video.mp4" media="only screen and (min-device-width: 568px)">
-						<source src="//media.html5media.info/video.iphone.mp4" media="only screen and (max-device-width: 568px)">
-						<source src="//media.html5media.info/video.ogv">
-					</video>
-				</div>
-			</div>
-		</section>
-
 		<!-- Portfolio Section -->
 		<div class="row">
 			<div class="col-lg-12">
 				<h2 class="page-header">精彩活动</h2>
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="./upload/index/700x450/15.jpg" alt="第十五届社团联合会干部留影">
 				</a>
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="./upload/index/700x450/15party.jpg" alt="第六届社团文化艺术节暨大学生社团联合会十五周年庆典">
 				</a>
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="./upload/index/700x450/nanchongsau.jpg" alt="南充市三高校第四届社团发展论坛">
 				</a>
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="./upload/index/700x450/chuanbeiyixueyuan.jpg" alt="第四届南充市三高校发展论坛_川北医学院门口留念">
 				</a>
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="./upload/index/700x450/xiwangxueyuan.jpg" alt="西南交通大学希望学院社团联合会">
 				</a>
 			</div>
 			<div class="col-md-4 col-sm-6">
@@ -257,10 +251,10 @@
 		<!-- Our Customers -->
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="page-header">精彩活动</h2>
+				<h2 class="page-header">缤纷社团</h2>
 			</div>
 			<div class="col-md-2 col-sm-4 col-xs-6">
-				<img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
+				<img class="img-responsive customer-img" src="./upload/index/500x300/zhishujie.jpg" alt="2010年社联人植树节">
 			</div>
 			<div class="col-md-2 col-sm-4 col-xs-6">
 				<img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
@@ -286,6 +280,7 @@
 	<jsp:include page="foot.jsp" />
 
 	<jsp:include page="common_resource_js.jsp" />
+	<script type="text/javascript" src="js/plugins/fancybox/jquery.fancybox.js?v=2.1.5"></script>
 
 	<!-- Script to Activate the Carousel -->
 	<script>
@@ -293,6 +288,7 @@
 			interval : 5000
 		//changes the speed
 		})
+		$('.fancybox').fancybox();
 	</script>
 
 </body>

@@ -9,7 +9,7 @@
 
 	<package name="default" namespace="/" extends="struts-default">
 		
-		<action name="index">
+		<action name="index" class="cn.edu.cwnu.sau.action.ui.IndexAction">
 			<result name="success">/_index.jsp</result>
 		</action>
 		
@@ -30,8 +30,24 @@
 			<result name="success" type="redirectAction">/index</result>
 		</action>
 		
-		<action name="forget">
+		<action name="forget" class="cn.edu.cwnu.sau.action.ui.ForgetAction">
 			<result name="success">_forget.jsp</result>
+		</action>
+		
+		<action name="faq" class="cn.edu.cwnu.sau.action.ui.FAQAction">
+			<result name="success">_faq.jsp</result>
+		</action>
+		
+		<action name="contact" class="cn.edu.cwnu.sau.action.ui.ContactAction">
+			<result name="success">_contact.jsp</result>
+		</action>
+		
+		<action name="feedback" class="cn.edu.cwnu.sau.action.ui.FeedbackAction">
+			<result name="success">_feedback.jsp</result>
+		</action>
+		
+		<action name="bbs" class="cn.edu.cwnu.sau.action.ui.BBSAction">
+			<result name="success">_bbs.jsp</result>
 		</action>
 
 	</package>

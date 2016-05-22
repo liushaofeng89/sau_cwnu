@@ -107,7 +107,7 @@
                     </div>
                     <div id="success"></div>
                     <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-primary">提交留言</button>
+                    <button type="submit" class="btn btn-primary disabled">提交留言</button>
                 </form>
             </div>
 
