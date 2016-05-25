@@ -21,10 +21,10 @@
 	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">社联概况 <b class="caret"></b></a>
 	                        <ul class="dropdown-menu">
 	                            <li>
-	                                <a href="introduction.jsp">社联简介</a>
+	                                <a href="introduction">社联简介</a>
 	                            </li>
 	                            <li>
-	                                <a href="department.jsp">组织部门</a>
+	                                <a href="department">组织部门</a>
 	                            </li>
 	                        </ul>
 	                    </li>
@@ -32,10 +32,10 @@
 	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-flag"></i> 模范先进 <b class="caret"></b></a>
 	                        <ul class="dropdown-menu">
 	                            <li>
-	                                <a href="excellent-group.jsp"><i class="fa fa-fw fa-group"></i> 先进集体</a>
+	                                <a href="excellent-group"><i class="fa fa-fw fa-group"></i> 先进集体</a>
 	                            </li>
 	                            <li>
-	                                <a href="excellent-person.jsp"><i class="fa fa-fw fa-user"></i> 先进个人</a>
+	                                <a href="excellent-person"><i class="fa fa-fw fa-user"></i> 先进个人</a>
 	                            </li>
 	                        </ul>
 	                    </li>
@@ -117,7 +117,7 @@
 								<li class="col-sm-2">
 									<ul>
 										<li class="dropdown-header">社团申请</li>  
-										<li><a href="#">申请材料</a></li>                  
+										<li><a href="association/apply">申请材料</a></li>                  
 									</ul>
 								</li>
 							</ul>				

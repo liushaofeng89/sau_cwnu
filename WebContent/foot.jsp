@@ -14,7 +14,7 @@
                 <div class="row-content col-lg-2 col-sm-2 col-xs-6">
                     <h3>校内链接</h3>
                     <ul>
-                        <li><a href="http://http://www.cwnu.edu.cn/" target="_blank" title="西华师范大学">学校首页</a></li>
+                        <li><a href="http://www.cwnu.edu.cn/" target="_blank" title="西华师范大学">学校首页</a></li>
                         <li><a href="http://youth.cwnu.edu.cn/fg/index/index.aspx" target="_blank" title="西华师范大学校团委">校团委</a></li>
                         <li><a href="http://218.6.128.130/web/web/web/index.asp" target="_blank" title="西华师范大学教务处">教务处</a></li>
                         <li><a href="http://210.41.193.13/WebSite/Web/Default.html" target="_blank" title="西华师范大学学工部（处）">学工部</a></li>

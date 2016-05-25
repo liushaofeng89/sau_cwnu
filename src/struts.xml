@@ -8,11 +8,27 @@
 	<constant name="struts.devMode" value="true" />
 
 	<package name="default" namespace="/" extends="struts-default">
-		
+
 		<action name="index" class="cn.edu.cwnu.sau.action.ui.IndexAction">
 			<result name="success">/_index.jsp</result>
 		</action>
-		
+
+		<action name="introduction" class="cn.edu.cwnu.sau.action.ui.IntroductionAction">
+			<result name="success">/_introduction.jsp</result>
+		</action>
+
+		<action name="department" class="cn.edu.cwnu.sau.action.ui.DepartmentAction">
+			<result name="success">/_department.jsp</result>
+		</action>
+
+		<action name="excellent-group" class="cn.edu.cwnu.sau.action.ui.ExcellentGroupAction">
+			<result name="success">/_excellent-group.jsp</result>
+		</action>
+
+		<action name="excellent-person" class="cn.edu.cwnu.sau.action.ui.ExcellentPersonAction">
+			<result name="success">/_excellent-person.jsp</result>
+		</action>
+
 		<action name="download" class="cn.edu.cwnu.sau.action.ui.DownloadAction">
 			<result name="success">/_download.jsp</result>
 		</action>
@@ -20,36 +36,50 @@
 		<action name="login" class="cn.edu.cwnu.sau.action.ui.LoginAction">
 			<result name="success">/_login.jsp</result>
 		</action>
-		
+
 		<action name="checkAuth" class="cn.edu.cwnu.sau.action.ui.LoginAction" method="checkAuth">
 			<result name="error">/_login.jsp</result>
 			<result name="success" type="redirect">/admin/index</result>
 		</action>
-		
+
 		<action name="logout" class="cn.edu.cwnu.sau.action.ui.LoginAction" method="logout">
 			<result name="success" type="redirectAction">/index</result>
 		</action>
-		
+
 		<action name="forget" class="cn.edu.cwnu.sau.action.ui.ForgetAction">
 			<result name="success">_forget.jsp</result>
 		</action>
-		
+
 		<action name="faq" class="cn.edu.cwnu.sau.action.ui.FAQAction">
 			<result name="success">_faq.jsp</result>
 		</action>
-		
+
 		<action name="contact" class="cn.edu.cwnu.sau.action.ui.ContactAction">
 			<result name="success">_contact.jsp</result>
 		</action>
-		
+
 		<action name="feedback" class="cn.edu.cwnu.sau.action.ui.FeedbackAction">
 			<result name="success">_feedback.jsp</result>
 		</action>
-		
+
 		<action name="bbs" class="cn.edu.cwnu.sau.action.ui.BBSAction">
 			<result name="success">_bbs.jsp</result>
 		</action>
 
+	</package>
+
+	<package name="association" namespace="/association" extends="default">
+		<action name="" class="cn.edu.cwnu.sau.action.ui.AssociationsAction" method="listAll">
+			<result name="success">../_associations.jsp</result>
+		</action>
+
+		<action name="all" class="cn.edu.cwnu.sau.action.ui.AssociationsAction" method="listAll">
+			<result name="success">../_associations.jsp</result>
+		</action>
+
+		<action name="apply" class="cn.edu.cwnu.sau.action.ui.AssociationsAction" method="apply">
+			<result name="success">../_apply.jsp</result>
+		</action>
 	</package>
 
 	<include file="admin.xml" />

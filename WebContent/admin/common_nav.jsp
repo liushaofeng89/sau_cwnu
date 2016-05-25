@@ -149,7 +149,7 @@
 				<li><a href="#"><i class="fa fa-user fa-fw"></i> 个人中心</a></li>
 				<li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置</a></li>
 				<li class="divider"></li>
-				<li><a href="logout"><i class="fa fa-sign-out fa-fw"></i> 注销</a></li>
+				<li><a href="../logout"><i class="fa fa-sign-out fa-fw"></i> 注销</a></li>
 			</ul> <!-- /.dropdown-user --></li>
 		<!-- /.dropdown -->
 	</ul>
