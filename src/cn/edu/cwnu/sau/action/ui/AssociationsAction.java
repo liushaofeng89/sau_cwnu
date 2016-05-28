@@ -37,4 +37,14 @@ public class AssociationsAction extends ActionSupport
         return ActionSupport.SUCCESS;
     }
 
+    
+    /**
+     * 展示一个社团的信息
+     * @return 一个的社团信息
+     */
+    public String show()
+    {
+        return ActionSupport.SUCCESS;
+    }
+
 }

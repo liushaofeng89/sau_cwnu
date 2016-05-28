@@ -39,5 +39,9 @@
 		<action name="browse" class="cn.edu.cwnu.sau.action.admin.CKEditorFileManageAction" method="browse">
 		</action>
 		
+		<action name="profile" class="cn.edu.cwnu.sau.action.admin.ProfileAction">
+			<result name="success">/admin/profile.jsp</result>
+		</action>
+		
 	</package>
 </struts>

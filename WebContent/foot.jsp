@@ -27,20 +27,16 @@
                     <h3>友情链接</h3>
                     <ul>
                         <li><a href="#">川北医学院社团联</a></li>
-                        <li><a href="#">西南石油大学社团联合会</a></li>
-                        <li><a href="#">西南交通大学希望学院社团联</a></li>
+                        <li><a href="#">西南石油大学南充校区社团联合会</a></li>
+                        <li><a href="#">西南交大希望学院社团联合会</a></li>
+                        <li><a href="#">南充职业技术学院社团联合会</a></li>
                     </ul>
                 </div>
 
                 <div class="row-content col-lg-2 col-sm-2 col-xs-6">
                     <h3>关注我们</h3>
                     <ul>
-                        <li><img src="imgs/sys/weixin_saucwnu.png" alt="西华师范大学大学生社团联合会官方微信公众号" width="140px"></li>
-                    	<li></li>
-                    	<li class="social">
-                    		<a href="http://blog.sina.com.cn/shetuanlianhehuicwnu" target="_blank"><i class="fa fa-tencent-weibo"></i></a>
-                    		<a href="http://blog.sina.com.cn/shetuanlianhehuicwnu" target="_blank"><i class="fa fa-weibo"></i></a>
-                    	</li>
+                        <li><img id="weixin" src="imgs/sys/weixin_saucwnu.png" alt="西华师范大学大学生社团联合会官方微信公众号" width="140px"></li>
                     </ul>
                 </div>
             </div><!--/.row -->

@@ -80,6 +80,10 @@
 		<action name="apply" class="cn.edu.cwnu.sau.action.ui.AssociationsAction" method="apply">
 			<result name="success">../_apply.jsp</result>
 		</action>
+		
+		<action name="show" class="cn.edu.cwnu.sau.action.ui.AssociationsAction" method="show">
+			<result name="success">../_show.jsp</result>
+		</action>
 	</package>
 
 	<include file="admin.xml" />
