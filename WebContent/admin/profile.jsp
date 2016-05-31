@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,7 +68,7 @@
 								<div class="title">
 									<a target="_blank" href="http://liushaofeng.cn/">刘少锋</a>
 								</div>
-								<div class="desc">第十六届社团联合会秘书长</div>
+								<div class="desc">第十六届社团联合会副秘书长</div>
 								<div class="desc">Curious developer</div>
 								<div class="desc">Tech geek</div>
 							</div>

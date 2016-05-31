@@ -4,6 +4,7 @@
 package cn.edu.cwnu.sau.action.ui;
 
 import cn.edu.cwnu.sau.util.ISAUConstant;
+import cn.edu.cwnu.sau.util.SAUEncryptionUtil;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
@@ -37,8 +38,10 @@ public class LoginAction extends ActionSupport
      */
     public String checkAuth()
     {
+        //判断账号类型
+        
         ActionContext.getContext().getSession().put(ISAUConstant.USER_SESSION, username);
-        System.out.println(username + "  " + password);
+        String encodePwd = SAUEncryptionUtil.encodePwd(password);
         return ActionSupport.SUCCESS;
     }
 

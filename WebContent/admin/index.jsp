@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
-<s:set name="test" value="sgdfgsd" scope="page"/>
-<!DOCTYPE html>
+<!DOCTYPE html><s:set name="menu_value" value="'index'"/>
 <html lang="en">
 <head>
 <meta charset="utf-8">

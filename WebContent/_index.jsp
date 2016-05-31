@@ -73,6 +73,7 @@
 									<li class="active"><a href="#notice" data-toggle="tab"><i class="fa fa-fw fa-bullhorn"></i> 重要通知</a></li>
 									<li><a href="#activity" data-toggle="tab"><i class="fa fa-fw fa-fire"></i> 社团活动</a></li>
 									<li><a href="#preview" data-toggle="tab"><i class="fa fa-fw fa-life-saver"></i> 活动预告</a></li>
+									<li><a href="#china" data-toggle="tab"><i class="fa fa-fw fa-globe"></i> 走出师大</a></li>
 								</ul>
 								<div class="tab-content">
 									<div class="tab-pane active" id="notice">
@@ -161,6 +162,42 @@
 											</tbody>
 										</table>
 									</div>
+									<div class="tab-pane" id="china">
+										<table class="table">
+											<tbody>
+												<tr>
+													<td>【图文】<a href="#">建校70周年文艺汇演预演公告</a></td>
+													<td class="time">2016/4/18 18:29:28</td>
+													<td class="view"><i class="fa fa-fw fa-eye"></i>1452</td>
+												</tr>
+												<tr>
+													<td>【图文】<a href="#">2015—2016年度五·四评优情况公示</a></td>
+													<td class="time">2016/4/17 22:29:38</td>
+													<td class="view"><i class="fa fa-fw fa-eye"></i>23144</td>
+												</tr>
+												<tr>
+													<td>【图文】<a href="#">2015—2018年度五·四评优情况公示</a></td>
+													<td class="time">2016/1/17 23:23:48</td>
+													<td class="view"><i class="fa fa-fw fa-eye"></i>234</td>
+												</tr>
+												<tr>
+													<td>【图文】<a href="#">西华师范大学70周年校庆志愿者拟录取人员公示</a></td>
+													<td class="time">2016/4/16 10:31:28</td>
+													<td class="view"><i class="fa fa-fw fa-eye"></i>1213</td>
+												</tr>
+												<tr>
+													<td>【图文】<a href="#">校庆志愿者拟录取人员公示</a></td>
+													<td class="time">2016/4/18 10:31:28</td>
+													<td class="view"><i class="fa fa-fw fa-eye"></i>213</td>
+												</tr>
+												<tr>
+													<td></td>
+													<td></td>
+													<td class="view"><a href="#">查看更多&rarr;</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -179,7 +216,6 @@
             	<a class="btn btn-cta fancybox" href="http://player.youku.com/player.php/sid/XMTU1MTM3Nzk3Ng==/v.swf"><i class="fa fa-play-circle"></i>70周年校庆</a>  
 			</div>
 		</section>
-
 
 		<!-- Services Section -->
 		<section id="services">
