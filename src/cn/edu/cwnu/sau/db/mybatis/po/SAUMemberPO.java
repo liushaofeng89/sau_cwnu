@@ -14,7 +14,8 @@ public class SAUMemberPO
     private String loginName;
     private String realName;
     private String nickName;
-    private String pwd;
+    /** 初始化密码：000000 */
+    private String pwd = "ef5c7682ccc81e20c72a1b5f687c8f62";
     /** 学院 */
     private int college;
     /** 专业 */

@@ -3,8 +3,11 @@
  */
 package cn.edu.cwnu.sau.action.ui;
 
+import cn.edu.cwnu.sau.db.mybatis.dao.SAUMemberInfoDAO;
+import cn.edu.cwnu.sau.db.mybatis.po.SAUMemberPO;
 import cn.edu.cwnu.sau.util.ISAUConstant;
 import cn.edu.cwnu.sau.util.SAUEncryptionUtil;
+import cn.edu.cwnu.sau.util.SAUStringUtil;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
@@ -38,11 +41,19 @@ public class LoginAction extends ActionSupport
      */
     public String checkAuth()
     {
-        //判断账号类型
-        
-        ActionContext.getContext().getSession().put(ISAUConstant.USER_SESSION, username);
-        String encodePwd = SAUEncryptionUtil.encodePwd(password);
-        return ActionSupport.SUCCESS;
+        // 判断账号类型
+        if (SAUStringUtil.isEmpty(username) || SAUStringUtil.isEmpty(password))
+        {
+            return ActionSupport.ERROR;
+        }
+
+        SAUMemberPO po = new SAUMemberInfoDAO().findByLoginName(username);
+        if (null != po && SAUEncryptionUtil.encodePwd(password).equals(po.getPwd()))
+        {
+            ActionContext.getContext().getSession().put(ISAUConstant.USER_SESSION, username);
+            return ActionSupport.SUCCESS;
+        }
+        return ActionSupport.ERROR;
     }
 
     /**
@@ -51,6 +62,7 @@ public class LoginAction extends ActionSupport
      */
     public String logout()
     {
+        ActionContext.getContext().getSession().put(ISAUConstant.USER_SESSION, null);
         return ActionSupport.SUCCESS;
     }
 

@@ -37,7 +37,6 @@ public final class SAUEncryptionUtil
                 sb.append((char) charArray[i]);
             }
         }
-        System.out.println("selected:" + sb.toString());
         return sb.toString().getBytes();
     }
 }

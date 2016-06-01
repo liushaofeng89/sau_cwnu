@@ -13,7 +13,8 @@
 			</dataSource>
 		</environment>
 	</environments>
+	
 	<mappers>
-		<mapper resource="cn/edu/cwnu/sau/db/mybatis/po/BlogMapper.xml" />
+		<mapper resource="cn/edu/cwnu/sau/db/mybatis/po/SAUMemberPOMapper.xml" />
 	</mappers>
 </configuration>
