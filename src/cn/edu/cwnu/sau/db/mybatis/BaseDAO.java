@@ -17,6 +17,14 @@ public class BaseDAO
      */
     protected SqlSession getSession()
     {
-        return SessionFactory.getSession();
+        return SessionFactory.getSqlSession(true);
+    }
+
+    /**
+     * 关闭session
+     */
+    protected void closeSession()
+    {
+        SessionFactory.closeSession();
     }
 }

@@ -7,7 +7,6 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import org.apache.log4j.Logger;
 
 /**
  * mybatis session factory
@@ -17,29 +16,77 @@ import org.apache.log4j.Logger;
  */
 public class SessionFactory
 {
-
-    private static String MYBATIS_CFG_RESOURCE = "mybatis-cfg.xml";
-    private static SqlSessionFactory ssf = null;
+    private static ThreadLocal<SqlSession> threadLocal = new ThreadLocal<SqlSession>();
+    private static SqlSessionFactory sqlSessionFactory;
+    /**
+     * 加载位于src/mybatis.xml配置文件
+     */
+    static
+    {
+        try
+        {
+            Reader reader = Resources.getResourceAsReader("mybatis-cfg.xml");
+            sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+    }
 
     /**
-     * 获取session
-     * @return session
+     * 禁止外界通过new方法创建
      */
-    public static SqlSession getSession()
+    private SessionFactory()
     {
-        if (null == ssf)
+    }
+
+    /**
+     * 获取mybatis session
+     * @param autoCommit autoCommit auto commit or not
+     * @return SqlSession
+     */
+    public static SqlSession getSqlSession(boolean autoCommit)
+    {
+        // 从当前线程中获取SqlSession对象
+        SqlSession sqlSession = threadLocal.get();
+        // 如果SqlSession对象为空
+        if (sqlSession == null)
         {
-            try
-            {
-                Reader reader = Resources.getResourceAsReader(MYBATIS_CFG_RESOURCE);
-                ssf = new SqlSessionFactoryBuilder().build(reader);
-            } catch (IOException e)
-            {
-                Logger.getLogger(SessionFactory.class).error(e.getMessage(), e);
-                return null;
-            }
+            // 在SqlSessionFactory非空的情况下，获取SqlSession对象
+            sqlSession = sqlSessionFactory.openSession(autoCommit);
+            // 将SqlSession对象与当前线程绑定在一起
+            threadLocal.set(sqlSession);
         }
-        return ssf.openSession();
+        // 返回SqlSession对象
+        return sqlSession;
+    }
+
+    /**
+     * 关闭SqlSession与当前线程分开
+     */
+    public static void closeSqlSession()
+    {
+        // 从当前线程中获取SqlSession对象
+        SqlSession sqlSession = threadLocal.get();
+        // 如果SqlSession对象非空
+        if (sqlSession != null)
+        {
+            // 关闭SqlSession对象
+            sqlSession.close();
+            // 分开当前线程与SqlSession对象的关系，目的是让GC尽早回收
+            threadLocal.remove();
+        }
+    }
+
+    /**
+     * 关闭session
+     */
+    public static void closeSession()
+    {
+        SqlSession sqlSession = threadLocal.get();
+        threadLocal.set(null);
+        sqlSession.close();
     }
 
 }

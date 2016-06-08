@@ -21,8 +21,8 @@ public class SAUMemberInfoDAO extends BaseDAO
     public SAUMemberPO findByLoginName(String loginName)
     {
         SqlSession session = getSession();
-        SAUMemberPO po = session.selectOne("findByLoginName", loginName);
-        session.close();
-        return po;
+        SAUMemberPO selectOne = session.selectOne("findByLoginName", loginName);
+        closeSession();
+        return selectOne;
     }
 }

@@ -13,4 +13,4 @@
 <script src="../js/plugins/dataTables/dataTables.bootstrap.js"></script>
 
 <!-- Left Menu Manage -->
-<script src="js/cn.edu.cwnu.sau.admin.js"></script>
+<script src="js/cn.edu.cwnu.sau.admin.common.js"></script>
