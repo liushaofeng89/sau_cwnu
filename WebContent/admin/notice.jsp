@@ -41,7 +41,7 @@
 						<div class="tab-pane fade in active" id="add">
 							<div class="row">
 								<div class="col-lg-12">
-									<form action="" method="post" >
+									<form action="" method="post">
 										<textarea name="saueditor" id="saueditor" rows="50" cols="80">在这里添加文章内容.</textarea>
 									</form>
 								</div>
@@ -132,6 +132,21 @@
 	});
 
 	//显示富文本编辑器
-	CKEDITOR.replace('saueditor');
+	var ckEditor = CKEDITOR.replace('saueditor');
+	// wait until the editor is done initializing
+	ckEditor.on("instanceReady", function() {
+		// overwrite the default save function
+		ckEditor.addCommand("save", {
+			modes : {
+				wysiwyg : 1,
+				source : 1
+			},
+			exec : function() {
+				// get the editor content
+				var theData = ckEditor.getData();
+				alert(theData);
+			}
+		});
+	})
 </script>
 </html>
