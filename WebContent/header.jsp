@@ -42,7 +42,7 @@
 	                    <li class="dropdown mega-dropdown">
 			    			<a href="#" class="dropdown-toggle" data-toggle="dropdown">社团风采  <span class="caret"></span></a>				
 							<ul class="dropdown-menu mega-dropdown-menu">
-								<li class="col-sm-2">
+								<li class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 			    					<ul>
 										<li class="dropdown-header">文化艺术类</li>
 										<li><a href="#">雪域锅庄协会</a></li>
@@ -67,7 +67,7 @@
 										 -->
 									</ul>
 								</li>
-								<li class="col-sm-2">
+								<li class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 									<ul>
 										<li class="dropdown-header">实践技能类</li>
 			                            <li><a href="#">大学生环保志愿者协会</a></li>
@@ -84,7 +84,7 @@
 										<li><a href="#">应用电子技术协会</a></li>                         
 									</ul>
 								</li>
-								<li class="col-sm-2">
+								<li class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 									<ul>
 										<li class="dropdown-header">理论学习类</li>
 										<li><a href="#">大学生营养健康协会</a></li>
@@ -94,7 +94,7 @@
 										<li><a href="#">马克思研究学会</a></li>							
 									</ul>
 								</li>
-								<li class="col-sm-2">
+								<li class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 									<ul>
 										<li class="dropdown-header">学术科技类</li>
 										<li><a href="#">化学学会</a></li>
@@ -109,7 +109,7 @@
 										 -->                        
 									</ul>
 								</li>
-								<li class="col-sm-2">
+								<li class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 									<ul>
 										<li class="dropdown-header">体育竞技类</li>
 										<li><a href="#">禅那瑜伽社</a></li>                         
@@ -126,7 +126,7 @@
 										 -->
 									</ul>
 								</li>
-								<li class="col-sm-2">
+								<li class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 									<ul>
 										<li class="dropdown-header">社团申请</li>  
 										<li><a href="association/apply">申请材料</a></li>                  

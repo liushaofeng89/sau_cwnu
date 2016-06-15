@@ -65,7 +65,7 @@
 		<section>
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 						<div class="tabbable-panel">
 							<div class="tabbable-line">
@@ -208,11 +208,11 @@
 		</section>
 		
 		<section class="promo box box-dark">        
-            <div class="col-md-9">
+            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
                 <h1 class="section-heading">庆祝西华师范大学建校70周年</h1>
                 <p>西华师范大学社团联合会成立于1996年3月15日，现下设有57个学生社团，是一个在校团委的关心和支持下的专门管理各学生社团的联合组织。</p>   
             </div>  
-            <div class="col-md-3">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
             	<a class="btn btn-cta fancybox" href="http://player.youku.com/player.php/sid/XMTU1MTM3Nzk3Ng==/v.swf"><i class="fa fa-play-circle"></i>70周年校庆</a>  
 			</div>
 		</section>
@@ -221,27 +221,27 @@
 		<section id="services">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 text-center">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 						<h2 class="section-heading">我们的服务</h2>
 						<h3 class="section-subheading text-muted">团结、明主、拼搏、进取</h3>
 					</div>
 				</div>
 				<div class="row text-center">
-					<div class="col-md-4">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x text-primary"></i> <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
 						</span>
 						<h4 class="service-heading">E-Commerce</h4>
 						<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
 							dicta impedit.</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x text-primary"></i> <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
 						</span>
 						<h4 class="service-heading">Responsive Design</h4>
 						<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
 							dicta impedit.</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x text-primary"></i> <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
 						</span>
 						<h4 class="service-heading">Web Security</h4>
@@ -254,30 +254,30 @@
 		
 		<!-- Portfolio Section -->
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h2 class="page-header">精彩活动</h2>
 			</div>
-			<div class="col-md-4 col-sm-6">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="./upload/index/700x450/15.jpg" alt="第十五届社团联合会干部留影">
 				</a>
 			</div>
-			<div class="col-md-4 col-sm-6">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="./upload/index/700x450/15party.jpg" alt="第六届社团文化艺术节暨大学生社团联合会十五周年庆典">
 				</a>
 			</div>
-			<div class="col-md-4 col-sm-6">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="./upload/index/700x450/nanchongsau.jpg" alt="南充市三高校第四届社团发展论坛">
 				</a>
 			</div>
-			<div class="col-md-4 col-sm-6">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="./upload/index/700x450/chuanbeiyixueyuan.jpg" alt="第四届南充市三高校发展论坛_川北医学院门口留念">
 				</a>
 			</div>
-			<div class="col-md-4 col-sm-6">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="./upload/index/700x450/xiwangxueyuan.jpg" alt="西南交通大学希望学院社团联合会">
 				</a>
 			</div>
-			<div class="col-md-4 col-sm-6">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
 				</a>
 			</div>
@@ -286,25 +286,25 @@
 
 		<!-- Our Customers -->
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h2 class="page-header">缤纷社团</h2>
 			</div>
-			<div class="col-md-2 col-sm-4 col-xs-6">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
 				<img class="img-responsive customer-img" src="./upload/index/500x300/zhishujie.jpg" alt="2010年社联人植树节">
 			</div>
-			<div class="col-md-2 col-sm-4 col-xs-6">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
 				<img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
 			</div>
-			<div class="col-md-2 col-sm-4 col-xs-6">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
 				<img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
 			</div>
-			<div class="col-md-2 col-sm-4 col-xs-6">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
 				<img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
 			</div>
-			<div class="col-md-2 col-sm-4 col-xs-6">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
 				<img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
 			</div>
-			<div class="col-md-2 col-sm-4 col-xs-6">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
 				<img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
 			</div>
 		</div>
