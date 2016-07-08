@@ -12,15 +12,15 @@
 
 <title>首页 - 大学生社团联合会网站后台管理系统</title>
 
-<jsp:include page="common_resource_css.jsp" />
+<jsp:include page="_css.jsp" />
 </head>
 <body>
 	<div id="wrapper">
-		<jsp:include page="common_nav.jsp" />
+		<jsp:include page="_nav.jsp" />
 		<div id="page-wrapper">
 			<div class="row">
 				<div class="col-lg-12">
-					<h2 class="page-header">系统信息总览<s:property value="#test"/></h2>
+					<h2 class="page-header">系统信息总览</h2>
 				</div>
 				<!-- /.col-lg-12 -->
 			</div>
@@ -118,7 +118,7 @@
 	</div>
 	<!-- /#wrapper -->
 
-	<jsp:include page="common_resource_js.jsp" />
+	<jsp:include page="_js.jsp" />
 
 </body>
 

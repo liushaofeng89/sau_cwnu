@@ -13,13 +13,14 @@
 
 <title>重要通知信息维护 - 大学生社团联合会网站后台管理系统</title>
 
-<jsp:include page="common_resource_css.jsp" />
+<jsp:include page="_css.jsp" />
+<link href="css/plugins/markdown/bootstrap-markdown.min.css" rel="stylesheet">
 
 </head>
 
 <body>
 	<div id="wrapper">
-		<jsp:include page="common_nav.jsp" />
+		<jsp:include page="_nav.jsp" />
 		<div id="page-wrapper">
 			<div class="row">
 				<div class="col-lg-12">
@@ -41,20 +42,12 @@
 						<div class="tab-pane fade in active" id="add">
 							<div class="row">
 								<div class="col-lg-12">
-									<form action="" method="post">
-										<textarea name="saueditor" id="saueditor" rows="50" cols="80">在这里添加文章内容.</textarea>
+									<form>
+										<input class="form-control" name="title" type="text" placeholder="输入通告标题">
+										<textarea id="mdContent" name="content" data-language="zh" data-provide="markdown" data-iconlibrary="fa" rows="10">编辑器使用markdown语言，请参见导航菜单链接教程！</textarea>
+										<hr />
+										<button id="submitBtn" type="button" class="btn btn-success">发布通知</button>
 									</form>
-								</div>
-							</div>
-							<hr />
-							<div class="row">
-								<div class="col-lg-8 text-left">
-									<p class="text-warning">
-										<i class="fa fa-info fa-fw"></i> 编辑器中的保存不是发布，若需要发布，请点击右侧的发布按钮；发布前需先保存！
-									</p>
-								</div>
-								<div class="col-lg-4 text-right">
-									<button type="button" class="btn btn-primary">发布通知</button>
 								</div>
 							</div>
 						</div>
@@ -100,11 +93,17 @@
 	</div>
 	<!-- /#wrapper -->
 
-	<jsp:include page="common_resource_js.jsp" />
-	<script src="./js/plugins/ckeditor/ckeditor.js"></script>
+	<jsp:include page="_js.jsp" />
+	<script src="js/plugins/markdown/markdown.js"></script>
+	<script src="js/plugins/markdown/to-markdown.js"></script>
+	<script src="js/plugins/markdown/bootstrap-markdown.js"></script>
+	<script src="js/plugins/markdown/bootstrap-markdown.zh.js"></script>
+	<script src="js/jquery.hotkeys.js"></script>
 
 </body>
 <script type="text/javascript">
+	var markdown = $('#markdown-editor').markdown();
+
 	$('#dataTables-example').dataTable({
 		//lengthMenu: [5, 10, 20, 30],//这里也可以设置分页，但是不能设置具体内容，只能是一维或二维数组的方式，所以推荐下面language里面的写法。
 		paging : true,//分页
@@ -131,22 +130,8 @@
 		pagingType : "full_numbers"//分页样式的类型		
 	});
 
-	//显示富文本编辑器
-	var ckEditor = CKEDITOR.replace('saueditor');
-	// wait until the editor is done initializing
-	ckEditor.on("instanceReady", function() {
-		// overwrite the default save function
-		ckEditor.addCommand("save", {
-			modes : {
-				wysiwyg : 1,
-				source : 1
-			},
-			exec : function() {
-				// get the editor content
-				var theData = ckEditor.getData();
-				alert(theData);
-			}
-		});
-	})
+	$("#submitBtn").click(function() {
+		alert(markdown.data('markdown').parseContent());
+	});
 </script>
 </html>

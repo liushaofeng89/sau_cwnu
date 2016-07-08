@@ -10,12 +10,12 @@
 <meta name="author" content="">
 <link rel="shortcut icon" href="../imgs/logo.ico">
 <title>个人中心 - 大学生社团联合会网站后台管理系统</title>
-<jsp:include page="common_resource_css.jsp" />
+<jsp:include page="_css.jsp" />
 <link href="./css/profile.css" rel="stylesheet">
 </head>
 <body>
 	<div id="wrapper">
-		<jsp:include page="common_nav.jsp" />
+		<jsp:include page="_nav.jsp" />
 		<div id="page-wrapper">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
@@ -31,31 +31,25 @@
 							<label class="label-light">昵称</label> <input class="form-control" type="text" placeholder="请输入昵称" 　name="nickName" id="nickName" />
 						</div>
 						<div class='form-group'>
-							<label class="label-light">姓名</label> <input class="form-control" required="required" type="text" placeholder="请输入姓名" name="realName"
-								id="realName" />
+							<label class="label-light">姓名</label> <input class="form-control" required="required" type="text" placeholder="请输入姓名" name="realName" id="realName" />
 						</div>
 						<div class='form-group'>
-							<label class="label-light">学院</label> <input class="form-control" required="required" type="text" placeholder="请输入学院" name="college"
-								id="college" />
+							<label class="label-light">学院</label> <input class="form-control" required="required" type="text" placeholder="请输入学院" name="college" id="college" />
 						</div>
 						<div class='form-group'>
 							<label class="label-light">专业</label> <input class="form-control" required="required" type="text" placeholder="请输入专业" name="major" id="major" />
 						</div>
 						<div class='form-group'>
-							<label class="label-light">电话</label> <input class="form-control" required="required" type="number" placeholder="请输入电话号码" name="phone" id="phone" />
-							<span class='help-block'>请留下真实电话号码，便于活动等事件通知</span>
+							<label class="label-light">电话</label> <input class="form-control" required="required" type="number" placeholder="请输入电话号码" name="phone" id="phone" /> <span class='help-block'>请留下真实电话号码，便于活动等事件通知</span>
 						</div>
 						<div class='form-group'>
-							<label class="label-light">邮箱</label> <input class="form-control" required="required" type="email" placeholder="请输入邮箱" name="mail" id="mail" />
-							<span class='help-block'>活动通知方式</span>
+							<label class="label-light">邮箱</label> <input class="form-control" required="required" type="email" placeholder="请输入邮箱" name="mail" id="mail" /> <span class='help-block'>活动通知方式</span>
 						</div>
 						<div class='form-group'>
-							<label class="label-light">微信</label> <input class="form-control" required="required" type="text" placeholder="请输入微信" name="weixin" id="weixin" />
-							<span class='help-block'>简洁的风格，没有广告才是我最爱她的原因</span>
+							<label class="label-light">微信</label> <input class="form-control" required="required" type="text" placeholder="请输入微信" name="weixin" id="weixin" /> <span class='help-block'>简洁的风格，没有广告才是我最爱她的原因</span>
 						</div>
 						<div class='form-group'>
-							<label class="label-light">QQ</label> <input class="form-control" required="required" type="text" placeholder="请输入QQ" name="qq" id="qq" /> <span
-								class='help-block'>QQ依然是一种很受欢迎的聊天方式</span>
+							<label class="label-light">QQ</label> <input class="form-control" required="required" type="text" placeholder="请输入QQ" name="qq" id="qq" /> <span class='help-block'>QQ依然是一种很受欢迎的聊天方式</span>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4">
@@ -102,6 +96,6 @@
 		<!-- /#page-wrapper -->
 	</div>
 	<!-- /#wrapper -->
-	<jsp:include page="common_resource_js.jsp" />
+	<jsp:include page="_js.jsp" />
 </body>
 </html>

@@ -4,6 +4,8 @@
 $(document).ready(function() {
 	$('#side-menu').metisMenu();
 	
+	$('[data-toggle="tooltip"]').tooltip();
+	
 	$(window).bind("load resize", function() {
         topOffset = 50;
         width = (this.window.innerWidth > 0) ? this.window.innerWidth : this.screen.width;

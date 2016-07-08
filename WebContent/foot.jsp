@@ -29,7 +29,7 @@
                         <li><a href="#">川北医学院社团联</a></li>
                         <li><a href="#">西南石油大学南充校区社团联合会</a></li>
                         <li><a href="#">西南交大希望学院社团联合会</a></li>
-                        <li><a href="#">南充职业技术学院社团联合会</a></li>
+                        <li><a href="http://tw.nczy.com/twweb/XUESHHD/xsst.html">南充职业技术学院社团联合会</a></li>
                     </ul>
                 </div>
 
