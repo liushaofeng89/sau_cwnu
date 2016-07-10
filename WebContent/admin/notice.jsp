@@ -14,8 +14,12 @@
 <title>重要通知信息维护 - 大学生社团联合会网站后台管理系统</title>
 
 <jsp:include page="_css.jsp" />
-<link href="css/plugins/markdown/bootstrap-markdown.min.css" rel="stylesheet">
-
+<link href="http://cdn.bootcss.com/bootstrap-markdown/2.10.0/css/bootstrap-markdown.min.css" rel="stylesheet">
+<style type="text/css">
+.tab-pane {
+	padding: 10px 0;
+}
+</style>
 </head>
 
 <body>
@@ -42,12 +46,23 @@
 						<div class="tab-pane fade in active" id="add">
 							<div class="row">
 								<div class="col-lg-12">
-									<form>
-										<input class="form-control" name="title" type="text" placeholder="输入通告标题">
-										<textarea id="mdContent" name="content" data-language="zh" data-provide="markdown" data-iconlibrary="fa" rows="10">编辑器使用markdown语言，请参见导航菜单链接教程！</textarea>
-										<hr />
-										<button id="submitBtn" type="button" class="btn btn-success">发布通知</button>
+									<form role="form">
+										<div class="form-group">
+											<label for="title">通知标题</label> <input type="text" name="title" class="form-control" placeholder="通知标题">
+										</div>
+										<div class="form-group">
+											<label for="content">通知内容</label>
+											<!-- 加载编辑器的容器 -->
+											<script id="container" name="content" type="text/plain">请输入通知内容...</script>
+										</div>
 									</form>
+								</div>
+								<hr />
+								<div class="col-lg-2">
+									<a href="#" id="saveBtn" class="btn btn-success"><i class="fa fa-save fa-fw"></i> 保存通知</a>
+								</div>
+								<div class="col-lg-offset-9 col-lg-1">
+									<a href="#" id="clearBtn" class="btn btn-default"><i class="fa fa-history fa-fw"></i> 清空</a>
 								</div>
 							</div>
 						</div>
@@ -94,15 +109,16 @@
 	<!-- /#wrapper -->
 
 	<jsp:include page="_js.jsp" />
-	<script src="js/plugins/markdown/markdown.js"></script>
-	<script src="js/plugins/markdown/to-markdown.js"></script>
-	<script src="js/plugins/markdown/bootstrap-markdown.js"></script>
-	<script src="js/plugins/markdown/bootstrap-markdown.zh.js"></script>
-	<script src="js/jquery.hotkeys.js"></script>
-
+	<!-- 配置文件 -->
+	<script type="text/javascript" src="js/plugins/ueditor/ueditor.config.js"></script>
+	<!-- 编辑器源码文件 -->
+	<script type="text/javascript" src="js/plugins/ueditor/ueditor.all.js"></script>
 </body>
 <script type="text/javascript">
-	var markdown = $('#markdown-editor').markdown();
+	var ue = UE.getEditor('container', {
+		autoHeightEnabled : true,
+		autoFloatEnabled : true
+	});
 
 	$('#dataTables-example').dataTable({
 		//lengthMenu: [5, 10, 20, 30],//这里也可以设置分页，但是不能设置具体内容，只能是一维或二维数组的方式，所以推荐下面language里面的写法。
@@ -130,8 +146,30 @@
 		pagingType : "full_numbers"//分页样式的类型		
 	});
 
-	$("#submitBtn").click(function() {
-		alert(markdown.data('markdown').parseContent());
+	function checkInput() {
+		alert("input!");
+		return false;
+	}
+
+	$("#saveBtn").click(function(e) {
+		if (checkInput()) {
+			$.ajax({
+				type : "post",
+				data : data,
+				url : url,
+				dataType : "json",
+				success : function(d) {
+					successfn(d);
+				},
+				error : function(e) {
+					errorfn(e);
+				}
+			});
+		}
+	});
+
+	$("#clearBtn").click(function(e) {
+
 	});
 </script>
 </html>

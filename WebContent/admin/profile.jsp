@@ -67,7 +67,7 @@
 							</li>
 							<li class="following">
 								<div>
-									<i class="fa fa-fa-envelope-o fa-fw"></i>
+									<i class="fa fa-envelope-o fa-fw"></i>
 									<s:property value="#session.USER_LOGIN_SESSION_INFO.mail" />
 								</div>
 							</li>

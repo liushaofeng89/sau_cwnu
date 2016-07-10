@@ -97,7 +97,7 @@
 												<tr>
 													<td></td>
 													<td></td>
-													<td class="view"><a href="#">查看更多&rarr;</a></td>
+													<td class="view"><a href="listnotices">查看更多&rarr;</a></td>
 												</tr>
 											</tbody>
 										</table>
@@ -123,7 +123,7 @@
 												<tr>
 													<td></td>
 													<td></td>
-													<td class="view"><a href="#">查看更多&rarr;</a></td>
+													<td class="view"><a href="listactivities">查看更多&rarr;</a></td>
 												</tr>
 											</tbody>
 										</table>
@@ -157,7 +157,7 @@
 													<td></td>
 													<td></td>
 													<td></td>
-													<td class="view"><a href="#">查看更多&rarr;</a></td>
+													<td class="view"><a href="listpreviews">查看更多&rarr;</a></td>
 												</tr>
 											</tbody>
 										</table>
@@ -193,7 +193,7 @@
 												<tr>
 													<td></td>
 													<td></td>
-													<td class="view"><a href="#">查看更多&rarr;</a></td>
+													<td class="view"><a href="listout">查看更多&rarr;</a></td>
 												</tr>
 											</tbody>
 										</table>

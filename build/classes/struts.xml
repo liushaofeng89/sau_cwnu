@@ -65,6 +65,19 @@
 		<action name="bbs" class="cn.edu.cwnu.sau.action.ui.BBSAction">
 			<result name="success">_bbs.jsp</result>
 		</action>
+		
+		<action name="listnotices" class="cn.edu.cwnu.sau.action.SAUCommonAction">
+			<result name="success">_show-list.jsp</result>
+		</action>
+		<action name="listactivities" class="cn.edu.cwnu.sau.action.SAUCommonAction">
+			<result name="success">_show-list.jsp</result>
+		</action>
+		<action name="listpreviews" class="cn.edu.cwnu.sau.action.SAUCommonAction">
+			<result name="success">_show-list.jsp</result>
+		</action>
+		<action name="listout" class="cn.edu.cwnu.sau.action.SAUCommonAction">
+			<result name="success">_show-list.jsp</result>
+		</action>
 
 	</package>
 
