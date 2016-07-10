@@ -16,85 +16,114 @@
 <body>
 	<div id="wrapper">
 		<jsp:include page="_nav.jsp" />
-		<div id="page-wrapper">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<h2 class="page-header">个人信息维护</h2>
-				</div>
-				<!-- /.col-lg-12 -->
-			</div>
-			<!-- /.row -->
-			<form class="form-horizontal" role="form">
-				<div class="row">
-					<div class="col-lg-8 col-md-8 col-sm-8">
-						<div class='form-group'>
-							<label class="label-light">昵称</label> <input class="form-control" type="text" placeholder="请输入昵称" 　name="nickName" id="nickName" />
-						</div>
-						<div class='form-group'>
-							<label class="label-light">姓名</label> <input class="form-control" required="required" type="text" placeholder="请输入姓名" name="realName" id="realName" />
-						</div>
-						<div class='form-group'>
-							<label class="label-light">学院</label> <input class="form-control" required="required" type="text" placeholder="请输入学院" name="college" id="college" />
-						</div>
-						<div class='form-group'>
-							<label class="label-light">专业</label> <input class="form-control" required="required" type="text" placeholder="请输入专业" name="major" id="major" />
-						</div>
-						<div class='form-group'>
-							<label class="label-light">电话</label> <input class="form-control" required="required" type="number" placeholder="请输入电话号码" name="phone" id="phone" /> <span class='help-block'>请留下真实电话号码，便于活动等事件通知</span>
-						</div>
-						<div class='form-group'>
-							<label class="label-light">邮箱</label> <input class="form-control" required="required" type="email" placeholder="请输入邮箱" name="mail" id="mail" /> <span class='help-block'>活动通知方式</span>
-						</div>
-						<div class='form-group'>
-							<label class="label-light">微信</label> <input class="form-control" required="required" type="text" placeholder="请输入微信" name="weixin" id="weixin" /> <span class='help-block'>简洁的风格，没有广告才是我最爱她的原因</span>
-						</div>
-						<div class='form-group'>
-							<label class="label-light">QQ</label> <input class="form-control" required="required" type="text" placeholder="请输入QQ" name="qq" id="qq" /> <span class='help-block'>QQ依然是一种很受欢迎的聊天方式</span>
+				<div class="col-md-12 text-center">
+					<div class="cover_photo">
+						<div class="cover_wrap">
+							<div class="image"></div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4">
-						<div class="card hovercard">
-							<div class="cardheader"></div>
-							<div class="avatar">
-								<img alt="" src="http://lorempixel.com/100/100/people/9/">
-							</div>
-							<div class="info">
-								<div class="title">
-									<a target="_blank" href="http://liushaofeng.cn/">刘少锋</a>
+					<div class="profile_image text-center">
+						<div class="avatar_wrapper">
+							<img class="avatar" src="http://lorempixel.com/100/100/people/9/" title="shaofeng liu">
+						</div>
+						<div class="badge_wrapper"></div>
+					</div>
+					<div class="user_details">
+						<h1>
+							<s:property default="没有设置昵称" value="#session.USER_LOGIN_SESSION_INFO.nickName" />
+						</h1>
+						<div class="short_bio" style="word-wrap: break-word;">
+							<p>
+								社团联合会 ·
+								<s:if test="#session.USER_LOGIN_SESSION_INFO.department==1">办公室</s:if>
+								<s:elseif test="#session.USER_LOGIN_SESSION_INFO.department==2">组织部</s:elseif>
+								<s:elseif test="#session.USER_LOGIN_SESSION_INFO.department==3">活动部</s:elseif>
+								<s:elseif test="#session.USER_LOGIN_SESSION_INFO.department==4">宣传部</s:elseif>
+								<s:elseif test="#session.USER_LOGIN_SESSION_INFO.department==5">监察部</s:elseif>
+								<s:elseif test="#session.USER_LOGIN_SESSION_INFO.department==6">外联部</s:elseif>
+								干事
+							</p>
+						</div>
+						<ul class="details">
+							<li class="affection">
+								<div>
+									<i class="fa fa-qq fa-fw"></i>
+									<s:property value="#session.USER_LOGIN_SESSION_INFO.qq" />
 								</div>
-								<div class="desc">第十六届社团联合会副秘书长</div>
-								<div class="desc">Curious developer</div>
-								<div class="desc">Tech geek</div>
-							</div>
-							<div class="bottom">
-								<a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac"> <i class="fa fa-twitter"></i>
-								</a> <a class="btn btn-danger btn-sm" rel="publisher" href="https://plus.google.com/+ahmshahnuralam"> <i class="fa fa-weixin"></i>
-								</a> <a class="btn btn-primary btn-sm" rel="publisher" href="https://plus.google.com/shahnuralam"> <i class="fa fa-qq"></i>
-								</a> <a class="btn btn-warning btn-sm" rel="publisher" href="https://plus.google.com/shahnuralam"> <i class="fa fa-weibo"></i>
-								</a>
+							</li>
+							<li class="views">
+								<div>
+									<i class="fa fa-weixin fa-fw"></i>
+									<s:property value="#session.USER_LOGIN_SESSION_INFO.weixin" />
+								</div>
+							</li>
+							<li class="followers">
+								<div>
+									<i class="fa fa-phone fa-fw"></i>
+									<s:property value="#session.USER_LOGIN_SESSION_INFO.phone" />
+								</div>
+							</li>
+							<li class="following">
+								<div>
+									<i class="fa fa-fa-envelope-o fa-fw"></i>
+									<s:property value="#session.USER_LOGIN_SESSION_INFO.mail" />
+								</div>
+							</li>
+							<li class="location">
+								<div>
+									<i class="fa fa-map-marker fa-fw"></i> 中国·南充
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="tabbable-panel">
+						<div class="tabbable-line" style="position: relative;">
+							<ul class="nav nav-tabs" style="position: relative; margin: 0 auto; display: block; width: 280px;">
+								<li class="active"><a href="#tab_default_1" data-toggle="tab"> 社联旅程 </a></li>
+								<li><a href="#tab_default_2" data-toggle="tab"> 基本信息</a></li>
+								<li><a href="#tab_default_3" data-toggle="tab"> 学籍信息 </a></li>
+							</ul>
+							<div class="tab-content container">
+								<div class="tab-pane active fade in" id="tab_default_1">
+									<p>I'm in Tab 1.</p>
+									<p>Duis autem eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+										aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+										molestie consequat.</p>
+									<p>
+										<a class="btn btn-success" href="http://j.mp/metronictheme" target="_blank"> Learn more... </a>
+									</p>
+								</div>
+								<div class="tab-pane fade" id="tab_default_2">
+									<p>Howdy, I'm in Tab 2.</p>
+									<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+										vulputate velit esse molestie consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
+									<p>
+										<a class="btn btn-warning" href="http://j.mp/metronictheme" target="_blank"> Click for more features... </a>
+									</p>
+								</div>
+								<div class="tab-pane fade" id="tab_default_3">
+									<p>Howdy, I'm in Tab 3.</p>
+									<p>Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+										consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+									<p>
+										<a class="btn btn-info" href="http://j.mp/metronictheme" target="_blank"> Learn more... </a>
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<hr />
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="form-group">
-							<div class="col-lg-2 col-md-2 col-sm-2">
-								<button type="submit" class="btn btn-success">
-									<i class="fa fa-save"></i> 更新个人信息
-								</button>
-							</div>
-							<div class="col-lg-10 col-md-10 col-sm-10 text-right">
-								<button type="submit" class="btn btn-default">重置</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</form>
+			</div>
 		</div>
-		<!-- /#page-wrapper -->
 	</div>
+	<!-- /#page-wrapper -->
 	<!-- /#wrapper -->
 	<jsp:include page="_js.jsp" />
 </body>

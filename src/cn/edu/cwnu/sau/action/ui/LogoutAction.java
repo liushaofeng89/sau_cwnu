@@ -3,6 +3,8 @@
  */
 package cn.edu.cwnu.sau.action.ui;
 
+import cn.edu.cwnu.sau.action.SAUCommonAction;
+
 import com.opensymphony.xwork2.ActionSupport;
 
 /**
@@ -11,7 +13,7 @@ import com.opensymphony.xwork2.ActionSupport;
  * @date 2016年5月7日
  * @version 1.0.0
  */
-public class LogoutAction extends ActionSupport
+public class LogoutAction extends SAUCommonAction
 {
 
 }

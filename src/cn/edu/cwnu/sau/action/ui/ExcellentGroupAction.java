@@ -1,5 +1,7 @@
 package cn.edu.cwnu.sau.action.ui;
 
+import cn.edu.cwnu.sau.action.SAUCommonAction;
+
 import com.opensymphony.xwork2.ActionSupport;
 
 /**
@@ -8,7 +10,7 @@ import com.opensymphony.xwork2.ActionSupport;
  * @date 2016年5月25日
  * @version 1.0.0
  */
-public class ExcellentGroupAction extends ActionSupport
+public class ExcellentGroupAction extends SAUCommonAction
 {
 
     /**

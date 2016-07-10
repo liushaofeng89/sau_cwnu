@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
 import org.apache.struts2.ServletActionContext;
 
+import cn.edu.cwnu.sau.action.SAUCommonAction;
 import cn.edu.cwnu.sau.util.DateTimeUtil;
 
 import com.opensymphony.xwork2.ActionSupport;
@@ -24,7 +25,7 @@ import com.opensymphony.xwork2.ActionSupport;
  * @date 2016年5月13日
  * @version 1.0.0
  */
-public class CKEditorFileManageAction extends ActionSupport
+public class CKEditorFileManageAction extends SAUCommonAction
 {
     private static final long serialVersionUID = 5722546735041916176L;
 

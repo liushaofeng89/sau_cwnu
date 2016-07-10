@@ -1,8 +1,10 @@
 package cn.edu.cwnu.sau.action.ui;
 
+import cn.edu.cwnu.sau.action.SAUCommonAction;
+
 import com.opensymphony.xwork2.ActionSupport;
 
-public class ContactAction extends ActionSupport
+public class ContactAction extends SAUCommonAction
 {
     private static final long serialVersionUID = 424521373174033027L;
 

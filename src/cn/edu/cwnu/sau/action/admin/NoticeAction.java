@@ -1,5 +1,7 @@
 package cn.edu.cwnu.sau.action.admin;
 
+import cn.edu.cwnu.sau.action.SAUCommonAction;
+
 import com.opensymphony.xwork2.ActionSupport;
 
 /**
@@ -8,7 +10,7 @@ import com.opensymphony.xwork2.ActionSupport;
  * @date 2016年5月12日
  * @version 1.0.0
  */
-public class NoticeAction extends ActionSupport
+public class NoticeAction extends SAUCommonAction
 {
 
     private static final long serialVersionUID = -6206703456187660245L;

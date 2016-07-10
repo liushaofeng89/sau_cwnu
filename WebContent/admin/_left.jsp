@@ -21,11 +21,8 @@
 					<li><a href="#"><i class="fa fa-street-view fa-fw"></i> 社联干事</a></li>
 				</ul>
 			</li>
-			<li><a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-				<ul class="nav nav-second-level">
-					<li><a href="#">Blank Page</a></li>
-					<li><a href="#">Login Page</a></li>
-				</ul>
+			<li>
+				<a <s:if test="#menu_value=='settings'">class="active"</s:if> href="settings"><i class="fa fa-cog fa-fw"></i> 设置</a>
 			</li>
 		</ul>
 	</div>

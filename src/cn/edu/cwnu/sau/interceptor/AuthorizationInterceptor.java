@@ -1,7 +1,8 @@
 package cn.edu.cwnu.sau.interceptor;
 
-import java.util.Map;
+import org.apache.struts2.ServletActionContext;
 
+import cn.edu.cwnu.sau.db.mybatis.po.SAUMemberPO;
 import cn.edu.cwnu.sau.util.ISAUConstant;
 
 import com.opensymphony.xwork2.ActionContext;
@@ -24,9 +25,11 @@ public class AuthorizationInterceptor extends AbstractInterceptor
     @Override
     public String intercept(ActionInvocation invocation) throws Exception
     {
+        Object attribute = ServletActionContext.getRequest().getSession()
+            .getAttribute(ISAUConstant.USER_SESSION);
+
         ActionContext ctx = invocation.getInvocationContext();
-        Map<String, Object> session = ctx.getSession();
-        String user = (String) session.get(ISAUConstant.USER_SESSION);
+        SAUMemberPO user = (SAUMemberPO) attribute;
 
         if (user != null)
         {

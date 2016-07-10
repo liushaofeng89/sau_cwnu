@@ -43,6 +43,10 @@
 			<result name="success">/admin/profile.jsp</result>
 		</action>
 		
+		<action name="settings" class="cn.edu.cwnu.sau.action.SAUCommonAction">
+			<result name="success">/admin/settings.jsp</result>
+		</action>
+		
 		<action name="markdown" class="com.opensymphony.xwork2.ActionSupport">
 			<result name="success">/admin/markdown.jsp</result>
 		</action>

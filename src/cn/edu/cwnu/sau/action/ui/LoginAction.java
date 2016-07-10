@@ -3,6 +3,11 @@
  */
 package cn.edu.cwnu.sau.action.ui;
 
+import javax.servlet.http.HttpSession;
+
+import org.apache.struts2.ServletActionContext;
+
+import cn.edu.cwnu.sau.action.SAUCommonAction;
 import cn.edu.cwnu.sau.db.mybatis.dao.SAUMemberInfoDAO;
 import cn.edu.cwnu.sau.db.mybatis.po.SAUMemberPO;
 import cn.edu.cwnu.sau.util.ISAUConstant;
@@ -18,7 +23,7 @@ import com.opensymphony.xwork2.ActionSupport;
  * @date 2016年5月7日
  * @version 1.0.0
  */
-public class LoginAction extends ActionSupport
+public class LoginAction extends SAUCommonAction
 {
 
     private static final long serialVersionUID = 4361116638297503441L;
@@ -50,7 +55,9 @@ public class LoginAction extends ActionSupport
         SAUMemberPO po = new SAUMemberInfoDAO().findByLoginName(username);
         if (null != po && SAUEncryptionUtil.encodePwd(password).equals(po.getPwd()))
         {
-            ActionContext.getContext().getSession().put(ISAUConstant.USER_SESSION, username);
+            HttpSession session = ServletActionContext.getRequest().getSession();
+            session.setAttribute(ISAUConstant.USER_SESSION, po);
+
             return ActionSupport.SUCCESS;
         }
         return ActionSupport.ERROR;
