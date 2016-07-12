@@ -117,7 +117,13 @@
 <script type="text/javascript">
 	var ue = UE.getEditor('container', {
 		autoHeightEnabled : true,
-		autoFloatEnabled : true
+		autoFloatEnabled : true,
+		toolbars : [ [ 'fullscreen', 'bold', 'italic', 'underline',
+				'fontborder', 'strikethrough', 'superscript', 'subscript',
+				'removeformat', 'formatmatch', 'autotypeset', 'blockquote',
+				'pasteplain', '|', 'forecolor', 'backcolor',
+				'insertorderedlist', 'insertunorderedlist', 'inserttable',
+				'simpleupload', 'attachment', 'scrawl', 'insertvideo' ] ]
 	});
 
 	$('#dataTables-example').dataTable({
