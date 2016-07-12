@@ -6,7 +6,7 @@ package cn.edu.cwnu.sau.action;
  * @date 2016年7月10日
  * @version 1.0.0
  */
-public class NoticeAction extends NoticeMangeAction
+public class NoticeAction extends SAUCommonAction
 {
 
     private static final long serialVersionUID = 1910838075826846632L;

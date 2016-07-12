@@ -1,16 +1,16 @@
 package cn.edu.cwnu.sau.action.admin;
 
-import cn.edu.cwnu.sau.action.NoticeMangeAction;
+import cn.edu.cwnu.sau.action.SAUCommonAction;
 
 import com.opensymphony.xwork2.ActionSupport;
 
 /**
- * 通知管理 1.
+ * 后台通知管理
  * @author liushaofeng
  * @date 2016年5月12日
  * @version 1.0.0
  */
-public class NoticeAction extends NoticeMangeAction
+public class NoticeAction extends SAUCommonAction
 {
 
     private static final long serialVersionUID = -6206703456187660245L;
@@ -22,11 +22,12 @@ public class NoticeAction extends NoticeMangeAction
     }
 
     /**
-     * 添加Notice
+     * 添加Notice(添加数据的时候需要鉴权)
      * @return 添加notice成功状态
      */
     public String addNotice()
     {
+
         return "";
     }
 

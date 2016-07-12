@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
-<s:set name="menu_value" value="'notice'" />
+<s:set name="menu_value" value="'publish'" />
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -28,7 +28,7 @@
 		<div id="page-wrapper">
 			<div class="row">
 				<div class="col-lg-12">
-					<h2 class="page-header">重要通知信息维护</h2>
+					<h2 class="page-header">站点信息发布</h2>
 				</div>
 				<!-- /.col-lg-12 -->
 			</div>
@@ -37,13 +37,13 @@
 				<div class="col-lg-12 col-md-12">
 					<!-- Nav tabs -->
 					<ul class="nav nav-tabs">
-						<li class="active"><a href="#add" data-toggle="tab">发布通知</a></li>
-						<li><a href="#history" data-toggle="tab">历史通知</a></li>
+						<li class="active"><a href="#notice" data-toggle="tab">发布通知</a></li>
+						<li><a href="#activity" data-toggle="tab">发布活动</a></li>
+						<li><a href="#willevent" data-toggle="tab">发布预告</a></li>
 					</ul>
-
 					<!-- Tab panes -->
 					<div class="tab-content">
-						<div class="tab-pane fade in active" id="add">
+						<div class="tab-pane fade in active" id="notice">
 							<div class="row">
 								<div class="col-lg-12">
 									<form role="form">
@@ -66,9 +66,41 @@
 								</div>
 							</div>
 						</div>
-						<div class="tab-pane fade" id="history">
+						<div class="tab-pane fade" id="activity">
 							<div class="table-responsive row" style="margin: 10px 0">
 								<table class="table table-striped table-bordered table-hover" id="dataTables-example">
+									<thead>
+										<tr>
+											<th>编号</th>
+											<th>标题</th>
+											<th>发布人</th>
+											<th>发布时间</th>
+											<th>点击量</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="odd gradeX">
+											<td>Trident</td>
+											<td>Internet Explorer 4.0</td>
+											<td>Win 95+</td>
+											<td class="center">4</td>
+											<td class="center">X</td>
+										</tr>
+										<tr class="even gradeC">
+											<td>Trident</td>
+											<td>Internet Explorer 5.0</td>
+											<td>Win 95+</td>
+											<td class="center">5</td>
+											<td class="center">C</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- /.table-responsive -->
+						</div>
+						<div class="tab-pane fade" id="willevent">
+							<div class="table-responsive row" style="margin: 10px 0">
+								<table class="table table-striped table-bordered table-hover">
 									<thead>
 										<tr>
 											<th>编号</th>
