@@ -13,27 +13,27 @@
 
     <title>大学生社团联合会 - 先进集体</title>
 
-    <jsp:include page="common_resource_css.jsp"/>
+    <jsp:include page="_resource_css.jsp"/>
 
 </head>
 
 <body>
 
     <!-- 引入导航，请求时才引入 -->
-    <jsp:include page="header.jsp"/>
+    <jsp:include page="_header.jsp"/>
 
     <!-- Page Content -->
     <div class="container">
 
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">先进个人
-                    <small>先进个人列表</small>
+                <h1 class="page-header">先进集体
+                    <small>先进集体列表</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.jsp">首页</a>
                     </li>
-                    <li class="active">先进个人</li>
+                    <li class="active">先进集体</li>
                 </ol>
             </div>
         </div>
@@ -114,9 +114,9 @@
     </div>
     <!-- /.container -->
     
-    <jsp:include page="foot.jsp"/>
+    <jsp:include page="_foot.jsp"/>
 
-    <jsp:include page="common_resource_js.jsp"/>
+    <jsp:include page="_resource_js.jsp"/>
 
 </body>
 

@@ -12,14 +12,14 @@
 
 <title>大学生社团联合会 - 组织部门介绍</title>
 
-<jsp:include page="common_resource_css.jsp" />
+<jsp:include page="_resource_css.jsp" />
 
 </head>
 
 <body>
 
 	<!-- 引入导航，请求时才引入 -->
-	<jsp:include page="header.jsp" />
+	<jsp:include page="_header.jsp" />
 
 	<!-- Page Content -->
 	<div class="container">
@@ -226,9 +226,9 @@
 	</div>
 	<!-- /.container -->
 
-	<jsp:include page="foot.jsp" />
+	<jsp:include page="_foot.jsp" />
 
-	<jsp:include page="common_resource_js.jsp" />
+	<jsp:include page="_resource_js.jsp" />
 </body>
 
 </html>

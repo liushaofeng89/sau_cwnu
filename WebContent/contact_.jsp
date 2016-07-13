@@ -11,14 +11,14 @@
 
 <title>联系我们 - 大学生社团联合会</title>
 
-<jsp:include page="common_resource_css.jsp" />
+<jsp:include page="_resource_css.jsp" />
 
 </head>
 
 <body>
 
 	<!-- 引入导航，请求时才引入 -->
-	<jsp:include page="header.jsp" />
+	<jsp:include page="_header.jsp" />
 
 	<!-- Page Content -->
 	<div class="container">
@@ -118,9 +118,9 @@
 	</div>
 	<!-- /.container -->
 
-	<jsp:include page="foot.jsp" />
+	<jsp:include page="_foot.jsp" />
 
-	<jsp:include page="common_resource_js.jsp" />
+	<jsp:include page="_resource_js.jsp" />
 
 	<!-- Contact Form JavaScript -->
 	<!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->

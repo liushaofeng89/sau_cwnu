@@ -8,14 +8,13 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="shortcut icon" href="imgs/logo.ico">
-<title>大学生社团联合会 - 常见问题问答</title>
+<title>大学生社团联合会 - 资源下载</title>
 
-<jsp:include page="common_resource_css.jsp" />
+<jsp:include page="_resource_css.jsp" />
 </head>
 <body>
-
 	<!-- 引入导航，请求时才引入 -->
-	<jsp:include page="header.jsp" />
+	<jsp:include page="_header.jsp" />
 
 	<!-- Page Content -->
 	<div class="container">
@@ -24,11 +23,11 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<h1 class="page-header">
-					常见问题 <small>常见问题</small>
+					社团人的BBS <small>BBS</small>
 				</h1>
 				<ol class="breadcrumb">
 					<li><a href="index">首页</a></li>
-					<li class="active">FAQ</li>
+					<li class="active">BBS</li>
 				</ol>
 			</div>
 		</div>
@@ -37,30 +36,25 @@
 		<!-- Content Row -->
 		<div class="row">
 			<div class="col-lg-12">
-				<div class="panel-group" id="accordion">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h4 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">社联系统什么时候上线?</a>
-							</h4>
-						</div>
-						<div id="collapseOne" class="panel-collapse collapse">
-							<div class="panel-body">这个需要看开发进度。</div>
-						</div>
-					</div>
-					<!-- /.panel -->
+				<div class="hero-unit">
+				  <h1>Heading</h1>
+				  <p>Tagline</p>
+				  <p>
+				    <a class="btn btn-primary btn-large">
+				      Learn more
+				    </a>
+				  </p>
 				</div>
-				<!-- /.panel-group -->
 			</div>
-			<!-- /.col-lg-12 -->
+			<!-- /.panel-group -->
 		</div>
-		<!-- /.row -->
+		<!-- /.col-lg-12 -->
 
 	</div>
 	<!-- /.container -->
 
-	<jsp:include page="foot.jsp" />
+	<jsp:include page="_foot.jsp" />
 
-	<jsp:include page="common_resource_js.jsp" />
+	<jsp:include page="_resource_js.jsp" />
 </body>
 </html>
