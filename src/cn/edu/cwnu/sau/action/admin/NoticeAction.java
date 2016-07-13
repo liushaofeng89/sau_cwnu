@@ -1,6 +1,9 @@
 package cn.edu.cwnu.sau.action.admin;
 
 import cn.edu.cwnu.sau.action.SAUCommonAction;
+import cn.edu.cwnu.sau.db.mybatis.dao.SAUNoticeInfoDAO;
+import cn.edu.cwnu.sau.db.mybatis.po.SAUMemberPO;
+import cn.edu.cwnu.sau.db.mybatis.po.SAUNoticePO;
 
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -15,6 +18,11 @@ public class NoticeAction extends SAUCommonAction
 
     private static final long serialVersionUID = -6206703456187660245L;
 
+    private String title;
+    private String content;
+
+    private String msg = "数据保存成功！";
+
     @Override
     public String execute() throws Exception
     {
@@ -27,8 +35,45 @@ public class NoticeAction extends SAUCommonAction
      */
     public String addNotice()
     {
+        // check login
+        SAUMemberPO currentUser = getCurrentUser();
+        if (null != currentUser)
+        {
+            SAUNoticePO notice = new SAUNoticePO(title, currentUser.getId(), content);
+            new SAUNoticeInfoDAO().addNotice(notice);
+            return SUCCESS;
+        }
+        return LOGIN;
+    }
 
-        return "";
+    public String getTitle()
+    {
+        return title;
+    }
+
+    public void setTitle(String title)
+    {
+        this.title = title;
+    }
+
+    public String getContent()
+    {
+        return content;
+    }
+
+    public void setContent(String content)
+    {
+        this.content = content;
+    }
+
+    public String getMsg()
+    {
+        return msg;
+    }
+
+    public void setMsg(String msg)
+    {
+        this.msg = msg;
     }
 
 }

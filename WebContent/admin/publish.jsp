@@ -37,9 +37,9 @@
 				<div class="col-lg-12 col-md-12">
 					<!-- Nav tabs -->
 					<ul class="nav nav-tabs">
-						<li class="active"><a href="#notice" data-toggle="tab">发布通知</a></li>
-						<li><a href="#activity" data-toggle="tab">发布活动</a></li>
-						<li><a href="#willevent" data-toggle="tab">发布预告</a></li>
+						<li class="active"><a href="#notice" data-toggle="tab"><i class="fa fa-fw fa-bullhorn"></i> 发布通知</a></li>
+						<li><a href="#activity" data-toggle="tab"><i class="fa fa-fw fa-fire"></i> 发布活动</a></li>
+						<li><a href="#willevent" data-toggle="tab"><i class="fa fa-fw fa-life-saver"></i> 发布预告</a></li>
 					</ul>
 					<!-- Tab panes -->
 					<div class="tab-content">
@@ -48,12 +48,12 @@
 								<div class="col-lg-12">
 									<form role="form">
 										<div class="form-group">
-											<label for="title">通知标题</label> <input type="text" name="title" class="form-control" placeholder="通知标题">
+											<label for="title">通知标题</label> <input id="title" type="text" name="title" class="form-control" placeholder="通知标题">
 										</div>
 										<div class="form-group">
 											<label for="content">通知内容</label>
 											<!-- 加载编辑器的容器 -->
-											<script id="container" name="content" type="text/plain">请输入通知内容...</script>
+											<script id="noticeCtt" name="content" type="text/plain">请输入通知内容...</script>
 										</div>
 									</form>
 								</div>
@@ -147,7 +147,7 @@
 	<script type="text/javascript" src="js/plugins/ueditor/ueditor.all.js"></script>
 </body>
 <script type="text/javascript">
-	var ue = UE.getEditor('container', {
+	var ue = UE.getEditor('noticeCtt', {
 		autoHeightEnabled : true,
 		autoFloatEnabled : true,
 		toolbars : [ [ 'fullscreen', 'bold', 'italic', 'underline',
@@ -184,25 +184,31 @@
 		pagingType : "full_numbers"//分页样式的类型		
 	});
 
-	function checkInput() {
-		alert("input!");
-		return false;
+	function checkInput(title, content) {
+		return title && content;
 	}
 
 	$("#saveBtn").click(function(e) {
-		if (checkInput()) {
+		var title = $("#title").val();
+		var content = UE.getEditor('noticeCtt').getContent();
+		if (checkInput(title, content)) {
 			$.ajax({
-				type : "post",
-				data : data,
-				url : url,
+				type : "POST",
+				url : "addNotice",
+				data : "title=" + title + "&content=" + content,
 				dataType : "json",
-				success : function(d) {
-					successfn(d);
+				success : function(msg) {
+					alert(msg);
+					if ("数据保存成功！" == msg) {
+						window.location.reload();
+					}
 				},
 				error : function(e) {
-					errorfn(e);
+					console.log(e);
 				}
 			});
+		} else {
+			alert("标题和内容不能为空！");
 		}
 	});
 

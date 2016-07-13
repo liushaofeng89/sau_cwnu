@@ -17,7 +17,7 @@
 		</interceptors>
 
 		<default-interceptor-ref name="authority-stack"></default-interceptor-ref>
-		
+
 		<global-results>
 			<result name="login" type="redirectAction">
 				<param name="actionName">login</param>
@@ -28,28 +28,50 @@
 		<action name="index" class="cn.edu.cwnu.sau.action.admin.IndexAction">
 			<result name="success">/admin/index.jsp</result>
 		</action>
-		
+
 		<action name="publish" class="cn.edu.cwnu.sau.action.SAUCommonAction">
 			<result name="success">/admin/publish.jsp</result>
 		</action>
-		
-		<action name="upload" class="cn.edu.cwnu.sau.action.admin.CKEditorFileManageAction" method="upload">
-		</action>
-		
-		<action name="browse" class="cn.edu.cwnu.sau.action.admin.CKEditorFileManageAction" method="browse">
-		</action>
-		
+
 		<action name="profile" class="cn.edu.cwnu.sau.action.admin.ProfileAction">
 			<result name="success">/admin/profile.jsp</result>
 		</action>
-		
+
 		<action name="settings" class="cn.edu.cwnu.sau.action.SAUCommonAction">
 			<result name="success">/admin/settings.jsp</result>
 		</action>
-		
+
 		<action name="markdown" class="cn.edu.cwnu.sau.action.SAUCommonAction">
 			<result name="success">/admin/markdown.jsp</result>
 		</action>
-		
+
+	</package>
+
+	<package name="json" namespace="/admin" extends="json-default">
+
+		<interceptors>
+			<interceptor name="authority" class="cn.edu.cwnu.sau.interceptor.AuthorizationInterceptor" />
+
+			<interceptor-stack name="authority-stack">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="authority" />
+			</interceptor-stack>
+		</interceptors>
+
+		<default-interceptor-ref name="authority-stack"></default-interceptor-ref>
+
+		<global-results>
+			<result name="login" type="redirectAction">
+				<param name="actionName">login</param>
+				<param name="namespace">/</param>
+			</result>
+		</global-results>
+
+		<action name="addNotice" class="cn.edu.cwnu.sau.action.admin.NoticeAction" method="addNotice">
+			<result type="json">
+				<!-- 这里指定将被Struts2序列化的属性，该属性在action中必须有对应的getter方法 -->
+				<param name="root">msg</param>
+			</result>
+		</action>
 	</package>
 </struts>
