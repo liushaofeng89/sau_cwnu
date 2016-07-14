@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="imgs/logo.ico">
 
-    <title>大学生社团联合会 - 新闻中心</title>
+    <title>新闻中心 - 大学生社团联合会</title>
 
 	<jsp:include page="_resource_css.jsp"/>
     

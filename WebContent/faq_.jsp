@@ -8,7 +8,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="shortcut icon" href="imgs/logo.ico">
-<title>大学生社团联合会 - 常见问题问答</title>
+<title>常见问题问答 - 大学生社团联合会</title>
 
 <jsp:include page="_resource_css.jsp" />
 </head>

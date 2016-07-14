@@ -5,149 +5,155 @@
  */
 
 /* Global Styles */
-
-html,
-body {
-    height: 100%;
+html, body {
+	height: 100%;
+	font-family: "微软雅黑"
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 .img-portfolio {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .img-hover:hover {
-    opacity: 0.8;
+	opacity: 0.8;
 }
 
 /* Home Page Carousel */
-
 header.carousel {
-    height: 60%;
+	height: 60%;
 }
 
-header.carousel .item,
-header.carousel .item.active,
-header.carousel .carousel-inner {
-    height: 100%;
+header.carousel .item, header.carousel .item.active, header.carousel .carousel-inner {
+	height: 100%;
 }
 
 header.carousel .fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
 }
 
 /* 404 Page Styles */
-
 .error-404 {
-    font-size: 100px;
+	font-size: 100px;
 }
 
 /* Pricing Page Styles */
-
 .price {
-    display: block;
-    font-size: 50px;
-    line-height: 50px;
+	display: block;
+	font-size: 50px;
+	line-height: 50px;
 }
 
 .price sup {
-    top: -20px;
-    left: 2px;
-    font-size: 20px;
+	top: -20px;
+	left: 2px;
+	font-size: 20px;
 }
 
 .period {
-    display: block;
-    font-style: italic;
+	display: block;
+	font-style: italic;
 }
 
 /* Responsive Styles */
-
-@media(max-width:991px) {
-    .customer-img,
-    .img-related {
-        margin-bottom: 30px;
-    }
+@media ( max-width :991px) {
+	.customer-img, .img-related {
+		margin-bottom: 30px;
+	}
 }
 
-@media(max-width:767px) {
-    .img-portfolio {
-        margin-bottom: 15px;
-    }
-
-    header.carousel .carousel {
-        height: 70%;
-    }
+@media ( max-width :767px) {
+	.img-portfolio {
+		margin-bottom: 15px;
+	}
+	header.carousel .carousel {
+		height: 70%;
+	}
 }
 
-.navbar-inverse{
-	filter:alpha(opacity=80); /*IE滤镜，透明度80%*/
-	-moz-opacity:0.8; /*Firefox私有，透明度80%*/
-	opacity:0.8;/*其他，透明度80%*/
+.navbar-inverse {
+	filter: alpha(opacity = 80); /*IE滤镜，透明度80%*/
+	-moz-opacity: 0.8; /*Firefox私有，透明度80%*/
+	opacity: 0.8; /*其他，透明度80%*/
 }
+
 .mega-dropdown {
-  position: static !important;
+	position: static !important;
 }
+
 .mega-dropdown-menu {
-    padding: 20px 0px;
-    width: 100%;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-.mega-dropdown-menu > li > ul {
-  padding: 0;
-  margin: 0;
-}
-.mega-dropdown-menu > li > ul > li {
-  list-style: none;
-}
-.mega-dropdown-menu > li > ul > li > a {
-  display: block;
-  color: #222;
-  padding: 3px 5px;
-}
-.mega-dropdown-menu > li ul > li > a:hover,
-.mega-dropdown-menu > li ul > li > a:focus {
-  text-decoration: underline;
-}
-.mega-dropdown-menu .dropdown-header {
-  font-size: 18px;
-  color: #1561d2;
-  padding: 5px 60px 5px 5px;
-  line-height: 30px;
+	padding: 20px 0px;
+	width: 100%;
+	box-shadow: none;
+	-webkit-box-shadow: none;
 }
 
+.mega-dropdown-menu>li>ul {
+	padding: 0;
+	margin: 0;
+}
 
-.foot-wrap{
-	background-color: #373f48;
-	margin-top:80px;
+.mega-dropdown-menu>li>ul>li {
+	list-style: none;
 }
- .row-content >h3{
-	color:#DDD;
-	font-size:16px;
-	font-weight: 300;
-	line-height: 16px;
-	margin:40px 0 30px 34px;
+
+.mega-dropdown-menu>li>ul>li>a {
+	display: block;
+	color: #222;
+	padding: 3px 5px;
 }
-ul{
-	line-height:24px;
-	list-style:none;
-	color:#878B91;
-} 
-footer a{
-	color:#878B91;
-}
-footer a:hover{
-	color:#FFF !important;
+
+.mega-dropdown-menu>li ul>li>a:hover, .mega-dropdown-menu>li ul>li>a:focus {
 	text-decoration: underline;
 }
-.social> a{
+
+.mega-dropdown-menu .dropdown-header {
+	font-size: 18px;
+	color: #1561d2;
+	padding: 5px 60px 5px 5px;
+	line-height: 30px;
+}
+
+.foot-wrap {
+	background-color: #373f48;
+	margin-top: 80px;
+}
+
+.row-content>h3 {
+	color: #DDD;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 16px;
+	margin: 40px 0 30px 34px;
+}
+
+ul {
+	line-height: 24px;
+	list-style: none;
+	color: #878B91;
+}
+
+footer a {
+	color: #878B91;
+}
+
+footer a:hover {
+	color: #FFF !important;
+	text-decoration: underline;
+}
+
+.social>a {
 	font-size: 20px;
 	margin: 5px 2px;
+}
+
+hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }

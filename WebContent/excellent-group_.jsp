@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+ssssssssss<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="imgs/logo.ico">
 
-    <title>大学生社团联合会 - 先进集体</title>
+    <title>先进集体 - 大学生社团联合会</title>
 
     <jsp:include page="_resource_css.jsp"/>
 

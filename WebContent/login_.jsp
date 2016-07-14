@@ -11,7 +11,7 @@
 <meta name="author" content="">
 <link rel="shortcut icon" href="./imgs/logo.ico">
 
-<title>大学生社团联合会网站后台管理系统登录 - 西华师范大学</title>
+<title>网站系统登录 - 大学生社团联合会</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">

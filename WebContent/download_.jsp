@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +9,7 @@
 <meta name="author" content="">
 <link rel="shortcut icon" href="imgs/logo.ico">
 
-<title>大学生社团联合会 - 资源下载</title>
+<title>资源下载中心 - 大学生社团联合会</title>
 
 <jsp:include page="_resource_css.jsp" />
 <!-- Add fancyBox main JS and CSS files -->
@@ -45,11 +44,9 @@
 			<div class="col-lg-12">
 
 				<ul id="myTab" class="nav nav-tabs">
-					<li class="active"><a href="#download" data-toggle="tab">
-							<i class="fa fa-fw fa-download"></i> 下载资源
+					<li class="active"><a href="#download" data-toggle="tab"> <i class="fa fa-fw fa-download"></i> 下载资源
 					</a></li>
-					<li><a href="#online" data-toggle="tab"><i
-							class="fa fa-fw fa-cloud"></i> 在线资源</a></li>
+					<li><a href="#online" data-toggle="tab"><i class="fa fa-fw fa-cloud"></i> 在线资源</a></li>
 				</ul>
 				<div id="myTabContent" class="tab-content">
 					<div class="tab-pane fade in active" id="download">
@@ -70,7 +67,7 @@
 										<td>1</td>
 										<td>云飞扬-西华师范大学校歌</td>
 										<td><i class="fa fa-fw fa-music"></i></td>
-										<td>10023</td>
+										<td>112</td>
 										<td>2014-04-05 11:34:47</td>
 										<td><a href="#"><i class="fa fa-fw fa-download"></i></a></td>
 									</tr>
@@ -78,7 +75,7 @@
 										<td>2</td>
 										<td>中国共产主义青年团团歌</td>
 										<td><i class="fa fa-fw fa-music"></i></td>
-										<td>10023</td>
+										<td>100</td>
 										<td>2014-04-05 11:34:47</td>
 										<td><a href="#"><i class="fa fa-fw fa-download"></i></a></td>
 									</tr>
@@ -86,15 +83,31 @@
 										<td>3</td>
 										<td>西华师范大学校徽</td>
 										<td><i class="fa fa-fw fa-image"></i></td>
-										<td>10023</td>
+										<td>103</td>
 										<td>2014-04-05 11:34:47</td>
 										<td><a href="#"><i class="fa fa-fw fa-download"></i></a></td>
 									</tr>
 									<tr class="odd gradeX">
 										<td>4</td>
-										<td>西华师范大学周年庆校庆宣传视频</td>
-										<td><i class="fa fa-fw fa-video-camera"></i></td>
-										<td>10023</td>
+										<td>西华师范大学-logo字体</td>
+										<td><i class="fa fa-fw fa-image"></i></td>
+										<td>123</td>
+										<td>2014-04-05 11:34:47</td>
+										<td><a href="#"><i class="fa fa-fw fa-download"></i></a></td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>5</td>
+										<td>西华师范大学大学生社团联合会logo</td>
+										<td><i class="fa fa-fw fa-image"></i></td>
+										<td>1003</td>
+										<td>2014-04-05 11:34:47</td>
+										<td><a href="#"><i class="fa fa-fw fa-download"></i></a></td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>6</td>
+										<td>西华师范大学大学生社团联合会logo(灰色)</td>
+										<td><i class="fa fa-fw fa-image"></i></td>
+										<td>1023</td>
 										<td>2014-04-05 11:34:47</td>
 										<td><a href="#"><i class="fa fa-fw fa-download"></i></a></td>
 									</tr>
@@ -115,15 +128,36 @@
 									</tr>
 								</thead>
 								<tbody>
-									<tr class="odd gradeX">
+									<tr>
 										<td>1</td>
-										<td>2014社团联招新视频</td>
-										<td>2014-09-23 11:21:22</td>
-										<td>
-											<a class="fancybox" href="http://player.youku.com/player.php/sid/XNzk5MzY4NjA4/v.swf" title="2014社团联招新视频">
-												<i class="fa fa-fw fa-eye"></i>
-											</a>
-										</td>
+										<td>第二十届社团联合会生日会</td>
+										<td>2016-09-23 11:21:27</td>
+										<td><a class="fancybox" href="http://player.youku.com/player.php/sid/XMTU1OTAzMjM3Mg==/v.swf" title="第二十届社团联合会生日会"> <i class="fa fa-fw fa-eye"></i>
+										</a></td>
+										<td>10023</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>第十八届社团联2013至2014学年度招新视频</td>
+										<td>2015-09-23 15:21:42</td>
+										<td><a class="fancybox" href="http://player.youku.com/player.php/sid/XNjE5MzU4NDY4/v.swf" title="第十八届社团联2013至2014学年度招新视频"> <i class="fa fa-fw fa-eye"></i>
+										</a></td>
+										<td>10023</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>第十八届社团联合会宣传视频</td>
+										<td>2014-09-23 15:31:22</td>
+										<td><a class="fancybox" href="http://player.youku.com/player.php/sid/XNjE4NDQzODQ4/v.swf" title="第十八届社团联合会宣传视频"> <i class="fa fa-fw fa-eye"></i>
+										</a></td>
+										<td>10023</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>2014年社团联招新视频</td>
+										<td>2014-09-23 19:41:22</td>
+										<td><a class="fancybox" href="http://player.youku.com/player.php/sid/XNzk5MzY4NjA4/v.swf" title="2014社团联招新视频"> <i class="fa fa-fw fa-eye"></i>
+										</a></td>
 										<td>10023</td>
 									</tr>
 								</tbody>
@@ -143,8 +177,8 @@
 
 	<jsp:include page="_resource_js.jsp" />
 	<script type="text/javascript" src="js/plugins/fancybox/jquery.fancybox.js?v=2.1.5"></script>
-	
-		<!-- Script to Activate the Carousel -->
+
+	<!-- Script to Activate the Carousel -->
 	<script>
 		$('.fancybox').fancybox();
 	</script>

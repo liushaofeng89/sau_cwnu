@@ -8,7 +8,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="shortcut icon" href="imgs/logo.ico">
-<title>大学生社团联合会 - 资源下载</title>
+<title>社团人的BBS - 大学生社团联合会</title>
 
 <jsp:include page="_resource_css.jsp" />
 </head>

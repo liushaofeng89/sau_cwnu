@@ -15,7 +15,7 @@
 			<ul class="nav navbar-nav navbar-right">
 	            <li><a href="index"><i class="fa fa-fw fa-home"></i> 首页</a></li>
 	            <li>
-	                        <a href="show-list.jsp?type=news"><i class="fa fa-fw fa-bullhorn"></i> 新闻活动</a>
+	                        <a href="listnotices?type=news"><i class="fa fa-fw fa-bullhorn"></i> 新闻活动</a>
 	                    </li>
 	                    <li class="dropdown">
 	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">社联概况 <b class="caret"></b></a>
@@ -129,7 +129,7 @@
 								<li class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 									<ul>
 										<li class="dropdown-header">社团申请</li>  
-										<li><a href="association/apply">申请材料</a></li>                  
+										<li><a href="association-apply">申请材料</a></li>                  
 									</ul>
 								</li>
 								

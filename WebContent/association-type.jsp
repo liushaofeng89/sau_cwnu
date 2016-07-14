@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="imgs/logo.ico">
 
-    <title>大学生社团联合会 - 文化艺术类</title>
+    <title>文化艺术类 - 大学生社团联合会</title>
 
     <jsp:include page="_resource_css.jsp"/>
 
