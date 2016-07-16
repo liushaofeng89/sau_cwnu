@@ -7,7 +7,6 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.struts2.ServletActionContext;
 
-import cn.edu.cwnu.sau.action.SAUCommonAction;
 import cn.edu.cwnu.sau.db.mybatis.dao.SAUMemberInfoDAO;
 import cn.edu.cwnu.sau.db.mybatis.po.SAUMemberPO;
 import cn.edu.cwnu.sau.util.ISAUConstant;

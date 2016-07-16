@@ -1,6 +1,6 @@
 package cn.edu.cwnu.sau.action.admin;
 
-import cn.edu.cwnu.sau.action.SAUCommonAction;
+import cn.edu.cwnu.sau.action.ui.SAUCommonAction;
 
 import com.opensymphony.xwork2.ActionSupport;
 

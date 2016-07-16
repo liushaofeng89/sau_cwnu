@@ -9,6 +9,14 @@
 
 	<package name="default" namespace="/" extends="struts-default">
 
+		<global-results>
+			<result name="commonErrorPage">/error.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping name="commonErrorPage" exception="java.lang.Exception" result="commonErrorPage" />
+		</global-exception-mappings>
+
+
 		<action name="index" class="cn.edu.cwnu.sau.action.ui.IndexAction">
 			<result name="success">/index_.jsp</result>
 		</action>
@@ -66,16 +74,18 @@
 			<result name="success">bbs_.jsp</result>
 		</action>
 
-		<action name="listnotices" class="cn.edu.cwnu.sau.action.SAUCommonAction">
+		<action name="listnotices" class="cn.edu.cwnu.sau.action.ui.NoticeAction" method="findAll">
 			<result name="success">show-list_.jsp</result>
 		</action>
-		<action name="listactivities" class="cn.edu.cwnu.sau.action.SAUCommonAction">
-			<result name="success">show-list_.jsp</result>
+
+		<action name="notice" class="cn.edu.cwnu.sau.action.ui.NoticeAction" method="findById">
+			<result name="success">show_.jsp</result>
 		</action>
-		<action name="listpreviews" class="cn.edu.cwnu.sau.action.SAUCommonAction">
-			<result name="success">show-list_.jsp</result>
-		</action>
-		<action name="listout" class="cn.edu.cwnu.sau.action.SAUCommonAction">
+		
+		
+		
+
+		<action name="listAll" class="cn.edu.cwnu.sau.action.ui.SAUCommonAction">
 			<result name="success">show-list_.jsp</result>
 		</action>
 
@@ -91,6 +101,12 @@
 			<result name="success">show_.jsp</result>
 		</action>
 
+	</package>
+
+	<package name="global-error" namespace="" extends="struts-default">
+		<action name="*">
+			<result>/404.jsp</result>
+		</action>
 	</package>
 
 	<include file="admin.xml" />

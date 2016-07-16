@@ -195,7 +195,7 @@
 			$.ajax({
 				type : "POST",
 				url : "addNotice",
-				data : "title=" + title + "&content=" + content,
+				data : "title=" + title + "&content=" + encodeURIComponent(content),
 				dataType : "json",
 				success : function(msg) {
 					alert(msg);

@@ -6,7 +6,31 @@
 		notice_author,notice_content,notice_visited,notice_update_time) values(#{title}, #{author}, #{content}, #{visited}, #{updateTime})
 	</insert>
 
-	<select id="listAll" parameterType="String" resultType="cn.edu.cwnu.sau.db.mybatis.po.SAUNoticePO">
-		select * from sau_cwnu_notice_info order by notice_update_time #{value}
+	<select id="listAllByUpdateOrdered" parameterType="String" resultType="Notice">
+		select id,
+		notice_title as title,
+		notice_content as content,
+		notice_author as author,
+		notice_visited as visited,
+		notice_update_time as updateTime
+		from
+		sau_cwnu_notice_info order by notice_update_time ${value}
 	</select>
+
+
+	<select id="listById" parameterType="int" resultType="Notice">
+		select id,
+		notice_title as title,
+		notice_content as content,
+		notice_author as author,
+		notice_visited as visited,
+		notice_update_time as
+		updateTime
+		from
+		sau_cwnu_notice_info where id=#{id}
+	</select>
+
+	<update id="updateViewCountById" parameterType="Notice">
+		UPDATE sau_cwnu_notice_info SET notice_visited = #{visited} WHERE id = #{id}
+	</update>
 </mapper>

@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
 import org.apache.struts2.ServletActionContext;
 
-import cn.edu.cwnu.sau.action.SAUCommonAction;
+import cn.edu.cwnu.sau.action.ui.SAUCommonAction;
 import cn.edu.cwnu.sau.util.DateTimeUtil;
 
 import com.opensymphony.xwork2.ActionSupport;

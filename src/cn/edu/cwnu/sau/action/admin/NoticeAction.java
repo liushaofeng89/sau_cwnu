@@ -1,6 +1,6 @@
 package cn.edu.cwnu.sau.action.admin;
 
-import cn.edu.cwnu.sau.action.SAUCommonAction;
+import cn.edu.cwnu.sau.action.ui.SAUCommonAction;
 import cn.edu.cwnu.sau.db.mybatis.dao.SAUNoticeInfoDAO;
 import cn.edu.cwnu.sau.db.mybatis.po.SAUMemberPO;
 import cn.edu.cwnu.sau.db.mybatis.po.SAUNoticePO;

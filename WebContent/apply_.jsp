@@ -12,7 +12,7 @@
 
 <jsp:include page="_resource_css.jsp" />
 <style type="text/css">
-p {
+#content p {
 	text-indent: 30px;
 	font-size: 14px;
 	line-height: 48px;

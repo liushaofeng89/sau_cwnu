@@ -1,4 +1,4 @@
-package cn.edu.cwnu.sau.action;
+package cn.edu.cwnu.sau.action.ui;
 
 import org.apache.struts2.ServletActionContext;
 

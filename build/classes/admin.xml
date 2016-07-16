@@ -29,7 +29,7 @@
 			<result name="success">/admin/index_.jsp</result>
 		</action>
 
-		<action name="publish" class="cn.edu.cwnu.sau.action.SAUCommonAction">
+		<action name="publish" class="cn.edu.cwnu.sau.action.ui.SAUCommonAction">
 			<result name="success">/admin/publish_.jsp</result>
 		</action>
 
@@ -37,11 +37,11 @@
 			<result name="success">/admin/profile_.jsp</result>
 		</action>
 
-		<action name="settings" class="cn.edu.cwnu.sau.action.SAUCommonAction">
+		<action name="settings" class="cn.edu.cwnu.sau.action.ui.SAUCommonAction">
 			<result name="success">/admin/settings_.jsp</result>
 		</action>
 
-		<action name="markdown" class="cn.edu.cwnu.sau.action.SAUCommonAction">
+		<action name="markdown" class="cn.edu.cwnu.sau.action.ui.SAUCommonAction">
 			<result name="success">/admin/markdown_.jsp</result>
 		</action>
 

@@ -8,8 +8,7 @@
 		user_real_name as realName,
 		user_nick_name as nickName,
 		user_pwd as pwd,
-		user_college as
-		college,
+		user_college as college,
 		user_major as major,
 		user_entrance_school_time as entranceSchool,
 		user_phone as phone,
@@ -17,10 +16,8 @@
 		user_qq as qq,
 		user_weixin as weixin,
 		user_department as department,
-		user_register_time as
-		registerTime
-		from
-		sau_cwnu_member_info where
-		user_login_name=#{loginName}
+		user_register_time as registerTime
+		from sau_cwnu_member_info 
+		where user_login_name=#{loginName}
 	</select>
 </mapper>

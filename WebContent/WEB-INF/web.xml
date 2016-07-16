@@ -19,7 +19,7 @@
 
 	<error-page>
 		<error-code>404</error-code>
-		<location>/error.jsp</location>
+		<location>/404.jsp</location>
 	</error-page>
 	<error-page>
 		<error-code>500</error-code>
@@ -28,6 +28,6 @@
 
 
 	<welcome-file-list>
-		<welcome-file>index_.jsp</welcome-file>
+		<welcome-file>welcome.jsp</welcome-file>
 	</welcome-file-list>
 </web-app>

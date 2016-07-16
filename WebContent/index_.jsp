@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
+<meta name="description" content="西华师范大学大学生社团联合会成立于1996年3月15日，隶属于校团委。我校社团分为文化艺术类、体育竞技类、实践技能类、学术科技类、理论学习类五大类，会员上万余名。">
 <meta name="author" content="刘少锋">
 <meta name="keywords" content="西华师范大学大学生社团联合会，大学生社团联合会，社团联，社团，学生组织，协会，学会，西华师大，西华师范大学，南充，高校">
 <link rel="shortcut icon" href="imgs/logo.ico">
@@ -70,30 +71,22 @@
 						<div class="tabbable-panel">
 							<div class="tabbable-line">
 								<ul class="nav nav-tabs ">
-									<li class="active"><a href="#notice" data-toggle="tab"><i class="fa fa-fw fa-bullhorn"></i> 重要通知</a></li>
+									<li class="active"><a href="#notice" data-toggle="tab"><i class="fa fa-fw fa-bullhorn"></i> 通知公告</a></li>
 									<li><a href="#activity" data-toggle="tab"><i class="fa fa-fw fa-fire"></i> 社团活动</a></li>
-									<li><a href="#preview" data-toggle="tab"><i class="fa fa-fw fa-life-saver"></i> 活动预告</a></li>
-									<li><a href="#china" data-toggle="tab"><i class="fa fa-fw fa-globe"></i> 走出师大</a></li>
+									<li><a href="#will" data-toggle="tab"><i class="fa fa-fw fa-life-saver"></i> 活动预告</a></li>
+									<li><a href="#out" data-toggle="tab"><i class="fa fa-fw fa-globe"></i> 走出师大</a></li>
 								</ul>
 								<div class="tab-content">
 									<div class="tab-pane active" id="notice">
 										<table class="table">
 											<tbody>
-												<tr>
-													<td>【图文】<a href="#">建校70周年文艺汇演预演公告</a></td>
-													<td class="time">2016/4/18 18:29:28</td>
-													<td class="view"><i class="fa fa-fw fa-eye"></i>12</td>
-												</tr>
-												<tr>
-													<td>【图文】<a href="#">2015—2016年度五·四评优情况公示</a></td>
-													<td class="time">2016/4/17 22:29:38</td>
-													<td class="view"><i class="fa fa-fw fa-eye"></i>2344</td>
-												</tr>
-												<tr>
-													<td>【图文】<a href="#">西华师范大学70周年校庆志愿者拟录取人员公示</a></td>
-													<td class="time">2016/4/16 10:31:28</td>
-													<td class="view"><i class="fa fa-fw fa-eye"></i>12313</td>
-												</tr>
+												<s:iterator value="noticesInfo" status="status" var="notice">
+													<tr>
+														<td><a href="notice?id=<s:property value="id" />"><s:property value="title" /></a></td>
+														<td class="time"><s:date name="updateTime" format="yyyy-MM-dd HH:mm:ss" /></td>
+														<td class="view"><i class="fa fa-fw fa-eye"></i> <s:property value="visited" /></td>
+													</tr>
+												</s:iterator>
 												<tr>
 													<td></td>
 													<td></td>
@@ -123,12 +116,12 @@
 												<tr>
 													<td></td>
 													<td></td>
-													<td class="view"><a href="listactivities">查看更多&rarr;</a></td>
+													<td class="view"><a href="listAll?type=activity">查看更多&rarr;</a></td>
 												</tr>
 											</tbody>
 										</table>
 									</div>
-									<div class="tab-pane" id="preview">
+									<div class="tab-pane" id="will">
 										<table class="table">
 											<tbody>
 												<tr>
@@ -157,12 +150,12 @@
 													<td></td>
 													<td></td>
 													<td></td>
-													<td class="view"><a href="listpreviews">查看更多&rarr;</a></td>
+													<td class="view"><a href="listAll?type=will">查看更多&rarr;</a></td>
 												</tr>
 											</tbody>
 										</table>
 									</div>
-									<div class="tab-pane" id="china">
+									<div class="tab-pane" id="out">
 										<table class="table">
 											<tbody>
 												<tr>
@@ -193,7 +186,7 @@
 												<tr>
 													<td></td>
 													<td></td>
-													<td class="view"><a href="listout">查看更多&rarr;</a></td>
+													<td class="view"><a href="listAll?type=out">查看更多&rarr;</a></td>
 												</tr>
 											</tbody>
 										</table>
@@ -206,14 +199,14 @@
 				</div>
 			</div>
 		</section>
-		
-		<section class="promo box box-dark">        
-            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                <h1 class="section-heading">庆祝西华师范大学建校70周年</h1>
-                <p>西华师范大学社团联合会成立于1996年3月15日，现下设有57个学生社团，是一个在校团委的关心和支持下的专门管理各学生社团的联合组织。</p>   
-            </div>  
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            	<a class="btn btn-cta fancybox" href="http://player.youku.com/player.php/sid/XMTU1MTM3Nzk3Ng==/v.swf"><i class="fa fa-play-circle"></i>70周年校庆</a>  
+
+		<section class="promo box box-dark">
+			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+				<h1 class="section-heading">庆祝西华师范大学建校70周年</h1>
+				<p>西华师范大学社团联合会成立于1996年3月15日，现下设有57个学生社团，是一个在校团委的关心和支持下的专门管理各学生社团的联合组织。</p>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<a class="btn btn-cta fancybox" href="http://player.youku.com/player.php/sid/XMTU1MTM3Nzk3Ng==/v.swf"><i class="fa fa-play-circle"></i>70周年校庆</a>
 			</div>
 		</section>
 
@@ -231,27 +224,24 @@
 						<span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x text-primary"></i> <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
 						</span>
 						<h4 class="service-heading">E-Commerce</h4>
-						<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
-							dicta impedit.</p>
+						<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 					</div>
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x text-primary"></i> <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
 						</span>
 						<h4 class="service-heading">Responsive Design</h4>
-						<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
-							dicta impedit.</p>
+						<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 					</div>
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x text-primary"></i> <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
 						</span>
 						<h4 class="service-heading">Web Security</h4>
-						<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
-							dicta impedit.</p>
+						<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 					</div>
 				</div>
 			</div>
 		</section>
-		
+
 		<!-- Portfolio Section -->
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -319,7 +309,7 @@
 	<script type="text/javascript" src="js/plugins/fancybox/jquery.fancybox.js?v=2.1.5"></script>
 
 	<!-- Script to Activate the Carousel -->
-	<script>
+	<script type="text/javascript">
 		$('.carousel').carousel({
 			interval : 5000
 		//changes the speed
