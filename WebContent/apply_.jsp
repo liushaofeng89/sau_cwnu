@@ -1,4 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+    String path = request.getContextPath();
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +11,9 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="shortcut icon" href="imgs/logo.ico">
-<title>常见问题问答 - 大学生社团联合会</title>
+<title>社团成立流程 - 大学生社团联合会</title>
 
 <jsp:include page="_resource_css.jsp" />
-<style type="text/css">
-#content p {
-	text-indent: 30px;
-	font-size: 14px;
-	line-height: 48px;
-}
-</style>
 </head>
 <body>
 
@@ -34,7 +30,7 @@
 					社团风采 <small>申请社团</small>
 				</h2>
 				<ol class="breadcrumb">
-					<li><a href="index">首页</a></li>
+					<li><a href="<%=path%>/index">首页</a></li>
 					<li>社团风采</li>
 					<li class="active">申请社团</li>
 				</ol>
@@ -105,6 +101,6 @@
 
 	<jsp:include page="_foot.jsp" />
 
-	<jsp:include page="_resource_js.jsp" />
+
 </body>
 </html>

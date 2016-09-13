@@ -70,9 +70,6 @@ hr {
 	<!-- /.container -->
 
 	<jsp:include page="_foot.jsp" />
-
-	<jsp:include page="_resource_js.jsp" />
-
 </body>
 
 </html>

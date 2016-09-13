@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
+<%
+    String path = request.getContextPath();
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +12,6 @@
 <meta name="description" content="西华师范大学大学生社团联合会成立于1996年3月15日，隶属于校团委。我校社团分为文化艺术类、体育竞技类、实践技能类、学术科技类、理论学习类五大类，会员上万余名。">
 <meta name="author" content="刘少锋">
 <meta name="keywords" content="西华师范大学大学生社团联合会，大学生社团联合会，社团联，社团，学生组织，协会，学会，西华师大，西华师范大学，南充，高校">
-<link rel="shortcut icon" href="imgs/logo.ico">
-
 <title>大学生社团联合会 - 西华师范大学</title>
 
 <jsp:include page="_resource_css.jsp" />
@@ -55,9 +56,8 @@
 		</div>
 
 		<!-- Controls -->
-		<a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="icon-prev"></span>
-		</a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="icon-next"></span>
-		</a>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="icon-prev"></span> </a> 
+		<a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="icon-next"></span> </a>
 	</header>
 
 	<!-- Page Content -->
@@ -216,27 +216,33 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 						<h2 class="section-heading">我们的服务</h2>
-						<h3 class="section-subheading text-muted">团结、明主、拼搏、进取</h3>
+						<h3 class="section-subheading text-muted">也是我们的原则</h3>
 					</div>
 				</div>
 				<div class="row text-center">
-					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-						<span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x text-primary"></i> <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x text-success"></i> <i class="fa fa-group fa-stack-1x fa-inverse"></i>
 						</span>
-						<h4 class="service-heading">E-Commerce</h4>
-						<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+						<h4 class="service-heading">团结</h4>
+						<p class="text-muted">由多种情感聚集在一起而产生的一种精神; 相互配合，无条件的配合。</p>
 					</div>
-					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-						<span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x text-primary"></i> <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x text-primary"></i> <i class="fa fa-female fa-stack-1x fa-inverse"></i>
 						</span>
-						<h4 class="service-heading">Responsive Design</h4>
-						<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+						<h4 class="service-heading">明主</h4>
+						<p class="text-muted">在尊重多数人意愿的同时，极力保护个人与少数群体的基本权利。</p>
 					</div>
-					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-						<span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x text-primary"></i> <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x text-danger"></i> <i class="fa fa-hand-rock-o fa-stack-1x fa-inverse"></i>
 						</span>
-						<h4 class="service-heading">Web Security</h4>
-						<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+						<h4 class="service-heading">拼搏</h4>
+						<p class="text-muted">最大的力量，用自己的所有不顾一切地极度努力，去实现自己的目标。</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x text-info"></i> <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="service-heading">进取</h4>
+						<p class="text-muted">努力上进，力图有所作为。</p>
 					</div>
 				</div>
 			</div>
@@ -246,6 +252,10 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h2 class="page-header">精彩活动</h2>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="./upload/index/700x450/123.jpg" alt="">
+				</a>
 			</div>
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="./upload/index/700x450/15.jpg" alt="第十五届社团联合会干部留影">
@@ -265,10 +275,6 @@
 			</div>
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="./upload/index/700x450/xiwangxueyuan.jpg" alt="西南交通大学希望学院社团联合会">
-				</a>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-				<a href="portfolio-item.html"> <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
 				</a>
 			</div>
 		</div>
@@ -304,8 +310,6 @@
 	<!-- /.container -->
 
 	<jsp:include page="_foot.jsp" />
-
-	<jsp:include page="_resource_js.jsp" />
 	<script type="text/javascript" src="js/plugins/fancybox/jquery.fancybox.js?v=2.1.5"></script>
 
 	<!-- Script to Activate the Carousel -->

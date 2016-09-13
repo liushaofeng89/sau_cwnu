@@ -32,7 +32,7 @@ public class AssociationsAction extends SAUCommonAction
      * 列出所有的社团
      * @return 所有的社团
      */
-    public String listAll()
+    public String list()
     {
         return ActionSupport.SUCCESS;
     }

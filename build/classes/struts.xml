@@ -81,26 +81,19 @@
 		<action name="notice" class="cn.edu.cwnu.sau.action.ui.NoticeAction" method="findById">
 			<result name="success">show_.jsp</result>
 		</action>
-		
-		
-		
 
-		<action name="listAll" class="cn.edu.cwnu.sau.action.ui.SAUCommonAction">
-			<result name="success">show-list_.jsp</result>
+	</package>
+	
+	<package name="assocation" namespace="/assocation" extends="struts-default">
+		<action name="apply" class="cn.edu.cwnu.sau.action.ui.AssociationsAction" method="apply">
+			<result name="success">../apply_.jsp</result>
 		</action>
-
-		<action name="association-apply" class="cn.edu.cwnu.sau.action.ui.AssociationsAction" method="apply">
-			<result name="success">apply_.jsp</result>
+		
+		<action name="list" class="cn.edu.cwnu.sau.action.ui.AssociationsAction" method="list">
 		</action>
-
-		<action name="all" class="cn.edu.cwnu.sau.action.ui.AssociationsAction" method="listAll">
-			<result name="success">associations_.jsp</result>
-		</action>
-
+		
 		<action name="show" class="cn.edu.cwnu.sau.action.ui.AssociationsAction" method="show">
-			<result name="success">show_.jsp</result>
 		</action>
-
 	</package>
 
 	<package name="global-error" namespace="" extends="struts-default">
@@ -110,7 +103,4 @@
 	</package>
 
 	<include file="admin.xml" />
-
-	<!-- Add packages here -->
-
 </struts>

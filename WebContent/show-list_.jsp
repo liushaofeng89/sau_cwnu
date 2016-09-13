@@ -80,9 +80,6 @@
 	<!-- /.row -->
 
 	<jsp:include page="_foot.jsp" />
-
-	<jsp:include page="_resource_js.jsp" />
-
 	<!-- DataTables JavaScript -->
 	<script src="js/jquery.dataTables.js"></script>
 	<script src="js/dataTables.bootstrap.js"></script>

@@ -1,4 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+    String path = request.getContextPath();
+%>
 <footer class="container-fluid foot-wrap">
 	<div class="container">
 		<div class="row">
@@ -36,7 +39,7 @@
 			<div class="row-content col-lg-2 col-sm-2 col-xs-6">
 				<h3>关注我们</h3>
 				<ul>
-					<li><img id="weixin" src="imgs/sys/weixin_saucwnu.png" alt="西华师范大学大学生社团联合会官方微信公众号" width="140px"></li>
+					<li><img id="weixin" src="<%=path%>/imgs/sys/weixin_saucwnu.png" alt="西华师范大学大学生社团联合会官方微信公众号" width="140px"></li>
 				</ul>
 			</div>
 		</div>
@@ -54,3 +57,5 @@
 		</div>
 	</div>
 </footer>
+
+<jsp:include page="_resource_js.jsp" />
