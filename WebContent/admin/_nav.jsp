@@ -154,3 +154,46 @@
 
 	<!-- /.navbar-collapse -->
 </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form id="addUserForm" method="post" action="">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">添加用户</h4>
+				</div>
+				<div class="modal-body">
+					<div class='form-group'>
+						<label class="label-light">学号</label> <input class="form-control" required type="number" placeholder="请输入学号" name="college"/>
+					</div>
+					<div class='form-group'>
+						<label class="label-light">姓名</label> <input class="form-control" required type="text" placeholder="请输入姓名" name="realName"/>
+					</div>
+					<div class='form-group'>
+						<label class="label-light">电话</label> <input class="form-control" required type="number" placeholder="电话号码" name="phone"/>
+					</div>
+					<div class='form-group'>
+						<label class="label-light">邮箱</label> <input class="form-control" type="email" placeholder="请输入邮箱信息" name="mail"/>
+					</div>
+					<div class='form-group'>
+						<label class="label-light">微信</label> <input class="form-control" type="text" placeholder="请输入微信号" name="weixin"/>
+					</div>
+					<div class='form-group'>
+						<label class="label-light">QQ</label> <input class="form-control" type="number" placeholder="请输入QQ号" name="qq"/>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button id="addUserBtn" type="submit" class="btn btn-primary">
+						<i class="fa fa-save fa-fw"></i> Save changes
+					</button>
+				</div>
+			</form>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

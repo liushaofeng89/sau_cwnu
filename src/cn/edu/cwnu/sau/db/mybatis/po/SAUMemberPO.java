@@ -16,23 +16,17 @@ public class SAUMemberPO
     private String nickName;
     /** 初始化密码：000000 */
     private String pwd = "ef5c7682ccc81e20c72a1b5f687c8f62";
-    /** 学院 */
-    private int college;
-    /** 专业 */
-    private int major;
-    /** 入学日期 */
-    private Date entranceSchool;
+    /** 学号 */
+    private String schoolId;
     private String phone;
     private String mail;
     private String qq;
     private String weixin;
-    /** 社联所处的部门 */
-    private int department;
     /** 系统注册时间 */
     private Date registerTime;
 
     /**
-     * defualt constructor
+     * default constructor
      */
     public SAUMemberPO()
     {
@@ -88,34 +82,14 @@ public class SAUMemberPO
         this.pwd = pwd;
     }
 
-    public int getCollege()
+    public String getSchoolId()
     {
-        return college;
+        return schoolId;
     }
 
-    public void setCollege(int college)
+    public void setSchoolId(String schoolId)
     {
-        this.college = college;
-    }
-
-    public int getMajor()
-    {
-        return major;
-    }
-
-    public void setMajor(int major)
-    {
-        this.major = major;
-    }
-
-    public Date getEntranceSchool()
-    {
-        return entranceSchool;
-    }
-
-    public void setEntranceSchool(Date entranceSchool)
-    {
-        this.entranceSchool = entranceSchool;
+        this.schoolId = schoolId;
     }
 
     public String getPhone()
@@ -156,16 +130,6 @@ public class SAUMemberPO
     public void setWeixin(String weixin)
     {
         this.weixin = weixin;
-    }
-
-    public int getDepartment()
-    {
-        return department;
-    }
-
-    public void setDepartment(int department)
-    {
-        this.department = department;
     }
 
     public Date getRegisterTime()

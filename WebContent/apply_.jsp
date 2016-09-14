@@ -101,6 +101,5 @@
 
 	<jsp:include page="_foot.jsp" />
 
-
 </body>
 </html>

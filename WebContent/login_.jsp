@@ -1,4 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+    String path = request.getContextPath();
+%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,8 +58,6 @@
 		</div>
 	</div>
 	<div class="posted-by">Copyright &copy; sau.cwnu.edu.cn 2016. All Right Reserved.</div>
-
-
 
 	<!-- jQuery Version 1.11.0 -->
 	<script src="js/jquery-1.11.0.js"></script>

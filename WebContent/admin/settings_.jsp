@@ -34,10 +34,7 @@
 							<label class="label-light">姓名</label> <input class="form-control" required="required" type="text" placeholder="<s:property value="#session.USER_LOGIN_SESSION_INFO.realName" />" name="realName" id="realName" />
 						</div>
 						<div class='form-group'>
-							<label class="label-light">学院</label> <input class="form-control" required="required" type="text" placeholder="请输入学院" name="college" id="college" />
-						</div>
-						<div class='form-group'>
-							<label class="label-light">专业</label> <input class="form-control" required="required" type="text" placeholder="请输入专业" name="major" id="major" />
+							<label class="label-light">学号</label> <input class="form-control" required="required" type="text" placeholder="请输入学号" name="college" id="schoolId" />
 						</div>
 						<div class='form-group'>
 							<label class="label-light">电话</label> <input class="form-control" required="required" type="number" placeholder="<s:property value="#session.USER_LOGIN_SESSION_INFO.phone" />" name="phone" id="phone" /> <span class='help-block'>请留下真实电话号码，便于活动等事件通知</span>

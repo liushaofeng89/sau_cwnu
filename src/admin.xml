@@ -44,6 +44,10 @@
 		<action name="markdown" class="cn.edu.cwnu.sau.action.ui.SAUCommonAction">
 			<result name="success">/admin/markdown_.jsp</result>
 		</action>
+		
+		<action name="assmanage" class="cn.edu.cwnu.sau.action.ui.SAUCommonAction">
+			<result name="success">/admin/association-manage_.jsp</result>
+		</action>
 
 	</package>
 
